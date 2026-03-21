@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function FaceFatReductionPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/face laser removal .jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function FaceFatReductionPage() {
         description:
           "Some people develop localized fullness in areas like the double chin, jawline, or lower face due to genetics, weight changes, or lifestyle factors. Modern non-surgical techniques can help improve contour and definition without invasive surgery.\n\nAt Healthfusion, we assess face shape, skin quality, and goals before recommending the most suitable approach.",
         image:
-          "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/face laser removal .jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

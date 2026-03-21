@@ -194,7 +194,7 @@ export default function Navbar() {
 
             {/* Right - Customer Care */}
             <div className="flex items-center gap-4 text-base">
-              <span className="hidden sm:inline">Customer Care - 9:00 AM to 7:30 PM</span>
+              <span className="hidden sm:inline">Customer Care - 9:30 AM to 6:30 PM</span>
               <a 
                 href="tel:9270216369" 
                 className="flex items-center gap-2 text-[#0077C8] font-semibold hover:text-blue-700 transition-colors"

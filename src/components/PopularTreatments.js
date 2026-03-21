@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function PopularTreatments() {
   const treatments = [
@@ -39,12 +39,16 @@ export default function PopularTreatments() {
   ];
 
   const scrollContainerRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
       const cardWidth = 288 + 24; // w-72 (288px) + gap-6 (24px)
       container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      setIsAutoScrolling(false);
+      setTimeout(() => setIsAutoScrolling(true), 5000); // Resume auto-scroll after 5 seconds
     }
   };
 
@@ -53,8 +57,33 @@ export default function PopularTreatments() {
       const container = scrollContainerRef.current;
       const cardWidth = 288 + 24; // w-72 (288px) + gap-6 (24px)
       container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      setIsAutoScrolling(false);
+      setTimeout(() => setIsAutoScrolling(true), 5000); // Resume auto-scroll after 5 seconds
     }
   };
+
+  // Auto-scroll functionality
+  useEffect(() => {
+    if (!isAutoScrolling) return;
+
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current) {
+        const container = scrollContainerRef.current;
+        const cardWidth = 288 + 24; // w-72 (288px) + gap-6 (24px)
+        const totalCards = treatments.length;
+        const nextIndex = (currentIndex + 1) % totalCards;
+        
+        // Scroll to next card and stop there
+        container.scrollTo({ 
+          left: nextIndex * cardWidth, 
+          behavior: 'smooth' 
+        });
+        setCurrentIndex(nextIndex);
+      }
+    }, 3000); // Wait 3 seconds at each slide
+
+    return () => clearInterval(interval);
+  }, [currentIndex, isAutoScrolling, treatments.length]);
 
   return (
     <section className="py-20 bg-white">

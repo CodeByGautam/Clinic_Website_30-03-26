@@ -76,7 +76,7 @@ export default function AppointmentPage() {
                   <div className="rounded-2xl border border-black/5 bg-white/60 px-5 py-4">
                     <p className="text-xs font-semibold text-gray-500">Support</p>
                     <p className="mt-1 text-sm font-semibold text-[#0B0F19]">
-                      9:00 AM to 7:30 PM
+                      9:30 AM to 6:30 PM
                     </p>
                   </div>
                   <div className="rounded-2xl border border-black/5 bg-white/60 px-5 py-4">

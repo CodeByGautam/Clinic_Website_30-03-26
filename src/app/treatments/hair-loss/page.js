@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function HairLossPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/hairprpmicroniddling.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function HairLossPage() {
         description:
           "Hair loss can be triggered by genetics, hormonal imbalance, nutritional deficiencies, stress, medical conditions, and scalp inflammation. Different patterns (androgenetic alopecia, telogen effluvium, alopecia areata) require different treatment strategies.\n\nOur clinic focuses on root-cause diagnosis, measurable tracking, and a combined plan that supports reduced shedding and improved density over time.",
         image:
-          "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/hairprpmicroniddling.jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

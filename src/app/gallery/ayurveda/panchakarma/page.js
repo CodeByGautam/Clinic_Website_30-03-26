@@ -9,31 +9,31 @@ export const metadata = {
 export default function PanchakarmaGalleryPage() {
   const galleryImages = [
     {
-      src: "/images/ayurveda/panchakarma/vamana-session.jpg",
+      src: "/vamana.jpg",
       title: "Vamana Therapy Session",
       caption: "Therapeutic emesis treatment",
       description: "Expert practitioner performing Vamana therapy to eliminate excess Kapha dosha and toxins from the upper digestive tract."
     },
     {
-      src: "/images/ayurveda/panchakarma/virechana-session.jpg",
+      src: "/virechana.jpg",
       title: "Virechana Therapy Session",
       caption: "Purgation therapy",
       description: "Controlled purgation therapy session designed to remove Pitta toxins from the liver, gallbladder, and intestines."
     },
     {
-      src: "/images/ayurveda/panchakarma/basti-session.jpg",
+      src: "/Gallery/BASTI.jpg",
       title: "Basti Therapy Session",
       caption: "Medicated enema treatment",
       description: "Traditional Basti therapy administration for Vata balance and deep colon cleansing using herbal oils and decoctions."
     },
     {
-      src: "/images/ayurveda/panchakarma/nasya-session.jpg",
+      src: "/nasya.jpg",
       title: "Nasya Therapy Session",
       caption: "Nasal administration therapy",
       description: "Nasya treatment session for head-neck disorders, involving the administration of medicated oils through the nasal passage."
     },
     {
-      src: "/images/ayurveda/panchakarma/raktamokshana-session.jpg",
+      src: "/raktamokshan.jpeg",
       title: "Raktamokshana Session",
       caption: "Bloodletting therapy",
       description: "Traditional bloodletting therapy session for removing vitiated blood and treating chronic skin and blood disorders."

@@ -9,13 +9,13 @@ export const metadata = {
 export default function AyurvedaFacialPage() {
   const galleryImages = [
     {
-      src: "/images/ayurveda/facial/herbal-facial.jpg",
+      src: "/Gallery/herbalfacailtreatment.jpeg",
       title: "Herbal Facial Treatment",
       caption: "Natural herbal face therapy",
       description: "Traditional Ayurvedic herbal facial using freshly prepared herbal pastes and natural ingredients for radiant skin."
     },
     {
-      src: "/images/ayurveda/facial/ubtan-treatment.jpg",
+      src: "/Gallery/ubtan treatment.jpeg",
       title: "Ubtan Treatment",
       caption: "Traditional cleansing therapy",
       description: "Authentic Ubtan treatment using gram flour, turmeric, and herbs for natural skin cleansing and brightening."
@@ -39,7 +39,7 @@ export default function AyurvedaFacialPage() {
       description: "Refreshing fruit facial using natural fruit enzymes and Ayurvedic herbs for gentle exfoliation and nourishment."
     },
     {
-      src: "/images/ayurveda/facial/anti-aging.jpg",
+      src: "/gallery/anti-aging facial.jpeg",
       title: "Anti-Aging Treatment",
       caption: "Youthful skin therapy",
       description: "Specialized Ayurvedic anti-aging facial using Rasayana herbs to reduce fine lines and restore youthful glow."

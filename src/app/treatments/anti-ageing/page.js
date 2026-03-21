@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function AntiAgeingPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    "/enti-aging.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function AntiAgeingPage() {
         description:
           "Ageing is a natural process, but factors like sun exposure, stress, pollution, and lifestyle can accelerate it. Common signs include fine lines, wrinkles, dullness, uneven tone, and loss of elasticity.\n\nOur anti-ageing plans are built around collagen stimulation, skin barrier support, and targeted procedures for visible yet natural-looking results.",
         image:
-          "https://images.unsplash.com/photo-1580281657527-47f249e8f7fd?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1580281657527-47f249e8f7fd?auto=format&fit=crop&w=2400&q=80",
+          "/enti-aging.jpg"
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

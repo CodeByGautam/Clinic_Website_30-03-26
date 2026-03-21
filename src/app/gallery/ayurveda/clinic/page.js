@@ -9,41 +9,41 @@ export const metadata = {
 export default function AyurvedaClinicPage() {
   const galleryImages = [
     {
-      src: "/images/ayurveda/clinic/reception.jpg",
+      src: "/clinic/clinic55.jpeg",
       title: "Clinic Reception",
       caption: "Welcoming reception area",
       description: "Our warm and welcoming reception area designed to create a calming first impression for all our patients seeking Ayurvedic healing."
     },
     {
-      src: "/images/ayurveda/clinic/waiting-area.jpg",
+      src: "/clinic/clinic56.jpeg",
       title: "Waiting Area",
       caption: "Peaceful waiting space",
       description: "A serene waiting area with comfortable seating and soothing ambiance to help you relax before your consultation."
     },
     {
-      src: "/images/ayurveda/clinic/consultation-room.jpg",
+      src: "/clinic/clinic20.jpeg",
       title: "Consultation Room",
       caption: "Private consultation space",
       description: "Private consultation rooms where our experienced Ayurvedic doctors conduct detailed assessments and personalized treatment planning."
     },
-    {
-      src: "/images/ayurveda/clinic/herbal-storage.jpg",
-      title: "Herbal Medicine Storage",
-      caption: "Authentic Ayurvedic herbs",
-      description: "Our well-organized herbal medicine storage featuring authentic Ayurvedic herbs and formulations sourced from trusted suppliers."
-    },
-    {
-      src: "/images/ayurveda/clinic/yoga-space.jpg",
-      title: "Yoga & Meditation Space",
-      caption: "Mind-body wellness area",
-      description: "Dedicated space for yoga and meditation sessions to complement your Ayurvedic treatment journey."
-    },
-    {
-      src: "/images/ayurveda/clinic/garden.jpg",
-      title: "Healing Garden",
-      caption: "Natural healing environment",
-      description: "Our healing garden with medicinal plants creates a natural environment that enhances the therapeutic experience."
-    }
+    // {
+    //   src: "/images/ayurveda/clinic/herbal-storage.jpg",
+    //   title: "Herbal Medicine Storage",
+    //   caption: "Authentic Ayurvedic herbs",
+    //   description: "Our well-organized herbal medicine storage featuring authentic Ayurvedic herbs and formulations sourced from trusted suppliers."
+    // },
+    // {
+    //   src: "/images/ayurveda/clinic/yoga-space.jpg",
+    //   title: "Yoga & Meditation Space",
+    //   caption: "Mind-body wellness area",
+    //   description: "Dedicated space for yoga and meditation sessions to complement your Ayurvedic treatment journey."
+    // },
+    // {
+    //   src: "/images/ayurveda/clinic/garden.jpg",
+    //   title: "Healing Garden",
+    //   caption: "Natural healing environment",
+    //   description: "Our healing garden with medicinal plants creates a natural environment that enhances the therapeutic experience."
+    // }
   ];
 
   return (

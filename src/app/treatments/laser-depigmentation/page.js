@@ -7,8 +7,10 @@ export const metadata = {
 
 export default function LaserDepigmentationPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
 
+    "/Gallery/pigmentationlaser.jpeg";
+    
   return (
     <PremiumTreatmentPage
       title="Laser De-Pigmentation"
@@ -19,7 +21,8 @@ export default function LaserDepigmentationPage() {
         description:
           "Pigmentation can appear as dark spots, melasma, sun damage, or uneven tone. It happens when melanin is produced or deposited unevenly due to genetics, hormones, UV exposure, inflammation, or previous acne.\n\nLaser de-pigmentation uses targeted energy to address pigmented areas while protecting surrounding skin—treatment selection depends on pigmentation type and skin sensitivity.",
         image:
-          "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/pigmentationlaser.jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

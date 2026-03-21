@@ -26,24 +26,24 @@ export default function AyurvedaTreatmentRoomsPage() {
       caption: "Forehead oil flow therapy",
       description: "Dedicated Shirodhara room with specialized equipment for this deeply relaxing forehead oil flow treatment."
     },
-    {
-      src: "/images/ayurveda/treatment-rooms/steam-room.jpg",
-      title: "Herbal Steam Room",
-      caption: "Swedana therapy chamber",
-      description: "Traditional herbal steam chamber for Swedana therapy using medicinal herbs to promote detoxification."
-    },
-    {
-      src: "/images/ayurveda/treatment-rooms/kizhi-room.jpg",
-      title: "Kizhi Therapy Room",
-      caption: "Herbal pouch massage",
-      description: "Specialized room for Kizhi treatments using heated herbal pouches for targeted pain relief and rejuvenation."
-    },
-    {
-      src: "/images/ayurveda/treatment-rooms/njavara-room.jpg",
-      title: "Njavara Room",
-      caption: "Rice bundle therapy",
-      description: "Traditional Njavara treatment space featuring authentic rice bundle therapy for nourishing and strengthening therapies."
-    }
+    // {
+    //   src: "/images/ayurveda/treatment-rooms/steam-room.jpg",
+    //   title: "Herbal Steam Room",
+    //   caption: "Swedana therapy chamber",
+    //   description: "Traditional herbal steam chamber for Swedana therapy using medicinal herbs to promote detoxification."
+    // },
+    // {
+    //   src: "/images/ayurveda/treatment-rooms/kizhi-room.jpg",
+    //   title: "Kizhi Therapy Room",
+    //   caption: "Herbal pouch massage",
+    //   description: "Specialized room for Kizhi treatments using heated herbal pouches for targeted pain relief and rejuvenation."
+    // },
+    // {
+    //   src: "/images/ayurveda/treatment-rooms/njavara-room.jpg",
+    //   title: "Njavara Room",
+    //   caption: "Rice bundle therapy",
+    //   description: "Traditional Njavara treatment space featuring authentic rice bundle therapy for nourishing and strengthening therapies."
+    // }
   ];
 
   return (

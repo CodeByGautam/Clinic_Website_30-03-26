@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function GFCtreatmentPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/HAIR GFC.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function GFCtreatmentPage() {
         description:
           "Growth Factor Concentrate (GFC) is a regenerative hair therapy that uses a processed concentrate derived from your own blood to deliver a higher concentration of growth factors compared to traditional PRP. It is designed to support follicle stimulation and hair regrowth in appropriate candidates.\n\nTreatment planning depends on hair-loss pattern, scalp condition, and overall suitability.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/HAIR GFC.jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

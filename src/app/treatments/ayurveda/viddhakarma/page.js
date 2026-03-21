@@ -7,7 +7,9 @@ export const metadata = {
 
 export default function ViddhakarmaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+
+    "/Viddhakarma2.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -20,7 +22,8 @@ export default function ViddhakarmaPage() {
         description:
           "Viddhakarma (also described as Siravyadha/bloodletting in classical Ayurveda) is a detoxification-focused therapy traditionally used when vitiated doshas affect Rakta dhatu (blood tissue), especially in Pitta-dominant patterns.\n\nMethod selection and suitability depend on constitution, indication, and safety checks.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/Viddhakarma2.jpg",
       }}
       causesTitle="Common Indications (As Assessed)"
       causes={[

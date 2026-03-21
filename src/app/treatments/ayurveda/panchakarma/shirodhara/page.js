@@ -11,8 +11,9 @@ export const metadata = {
 
 export default function ShirodharaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
 
+    "/shirodhara3.jpg";
   return (
     <PremiumTreatmentPage
       title="Shirodhara Therapy"
@@ -24,7 +25,8 @@ export default function ShirodharaPage() {
         description:
           "Shirodhara is a classical Ayurvedic therapy where a continuous stream of warm medicated oil is gently poured on the forehead region. It is traditionally used to calm aggravated Vata, support sleep quality, and promote deep relaxation.\n\nOil selection and session planning depend on constitution and goals—your Ayurvedic doctor will guide the protocol.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/shirodhara3.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

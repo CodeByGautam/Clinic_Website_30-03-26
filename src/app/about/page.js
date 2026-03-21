@@ -19,22 +19,22 @@ export default function AboutOverviewPage() {
       <section className="relative h-[400px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/clinic/hero-bg.jpg"
+            src="/clinic/clinic49.jpeg"
             alt="AyuMed Clinic"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F19]/80 to-[#0B0F19]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F19]/30 to-[#0B0F19]/50" />
         </div>
         
         <div className="relative h-full flex items-center justify-center px-8">
           <div className="text-center max-w-3xl">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-medium mb-4 backdrop-blur-sm">
+            {/* <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-medium mb-4 backdrop-blur-sm">
               <Sparkles className="w-4 h-4" />
-              Welcome to AyuMed
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Welcome to HealthFusion
+            </span> */}
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-10">
               Transforming Skin Health with<br />
               <span className="text-[#00A651]">Ancient Wisdom</span> & <span className="text-[#0077C8]">Modern Science</span>
             </h1>

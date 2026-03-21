@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function HydrafacialPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/HYDRAFACIAL.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function HydrafacialPage() {
         description:
           "Hydrafacial is a non-invasive skin resurfacing treatment that combines cleansing, exfoliation, gentle extraction, hydration, and antioxidant infusion in a single session. It improves skin clarity and glow without the downtime commonly associated with harsher procedures.\n\nIt’s ideal for congested pores, dullness, uneven tone, and dehydrated skin, and can be customized to your concerns.",
         image:
-          "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/HYDRAFACIAL.jpeg",
       }}
       causesTitle="Common Concerns It Targets"
       causes={[

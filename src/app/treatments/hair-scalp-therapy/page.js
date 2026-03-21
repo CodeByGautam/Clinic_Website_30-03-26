@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function HairScalpTherapyPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80";
+    "/hair&skin.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function HairScalpTherapyPage() {
         description:
           "Healthy hair begins with a healthy scalp. Hair fall and thinning can be caused by genetics, hormones, nutritional deficiencies, stress, medical conditions, or scalp inflammation. The right treatment depends on identifying the root cause—not just symptoms.\n\nAt Healthfusion, we evaluate your scalp, hair density, and lifestyle factors to build a personalized plan using advanced therapies and maintenance guidance.",
         image:
-          "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          "/hair&skin.jpg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

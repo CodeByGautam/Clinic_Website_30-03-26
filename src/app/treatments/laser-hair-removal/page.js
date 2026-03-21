@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function LaserHairRemovalPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/laserhairremoval.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function LaserHairRemovalPage() {
         description:
           "Laser hair removal uses focused light energy to target hair follicles and reduce future growth. The light is absorbed by pigment in the hair, helping disable the follicle while protecting surrounding skin.\n\nOur clinic uses dermatologist-guided parameters and modern devices to provide effective hair reduction with comfort-focused care.",
         image:
-          "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/laserhairremoval.jpeg",
       }}
       causesTitle="When Laser Hair Removal Helps"
       causes={[

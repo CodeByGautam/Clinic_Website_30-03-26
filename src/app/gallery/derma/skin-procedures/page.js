@@ -9,37 +9,37 @@ export const metadata = {
 export default function SkinProceduresPage() {
   const galleryImages = [
     {
-      src: "/images/derma/skin-procedures/acne-treatment.jpg",
+      src: "/Gallery/acne treatment.jpeg",
       title: "Acne Treatment Session",
       caption: "Advanced acne therapy",
       description: "Comprehensive acne treatment combining medical facials, chemical peels, and LED therapy for clear, healthy skin."
     },
     {
-      src: "/images/derma/skin-procedures/scar-treatment.jpg",
+      src: "/Gallery/scar-revision.jpeg",
       title: "Scar Revision Therapy",
       caption: "MNRF scar reduction",
       description: "Advanced MNRF treatment for acne scars showing the precision of microneedling radiofrequency technology."
     },
     {
-      src: "/images/derma/skin-procedures/pigmentation.jpg",
+      src: "/Gallery/pigmentation treatment.jpeg",
       title: "Pigmentation Treatment",
       caption: "Melasma and dark spot therapy",
       description: "Professional pigmentation treatment using advanced laser and peel combinations for even skin tone."
     },
     {
-      src: "/images/derma/skin-procedures/chemical-peel.jpg",
+      src: "/Gallery/chemicalpeels .jpeg",
       title: "Chemical Peel Session",
       caption: "Medical-grade peel application",
       description: "Expert application of medical-grade chemical peels for skin resurfacing and rejuvenation by trained dermatologists."
     },
     {
-      src: "/images/derma/skin-procedures/microdermabrasion.jpg",
+      src: "/Gallery/microdermabrasion.jpeg",
       title: "Microdermabrasion",
       caption: "Diamond tip exfoliation",
       description: "Advanced microdermabrasion treatment using diamond tip technology for gentle yet effective skin exfoliation."
     },
     {
-      src: "/images/derma/skin-procedures/prp-facial.jpg",
+      src: "/Gallery/prpfacialtreat .jpeg",
       title: "PRP Facial Treatment",
       caption: "Vampire facial therapy",
       description: "PRP (Platelet-Rich Plasma) facial treatment for natural skin rejuvenation using the body's own healing factors."

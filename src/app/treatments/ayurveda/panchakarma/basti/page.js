@@ -11,7 +11,8 @@ export const metadata = {
 
 export default function BastiPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/BASTI.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -24,7 +25,8 @@ export default function BastiPage() {
         description:
           "Basti is a classical Panchakarma therapy focused on balancing Vata dosha. It involves administration of medicated oils or herbal decoctions via a controlled, supervised protocol. Basti is traditionally considered for Vata-related patterns such as constipation, dryness, certain joint pains, and nervous-system imbalance—when suitable.\n\nYour Ayurvedic doctor will advise the type (oil vs decoction) and schedule based on your constitution and symptoms.",
         image:
-          "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/BASTI.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function FillersPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1580281657527-47f249e8f7fd?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1580281657527-47f249e8f7fd?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/FILLER TREATMENT.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function FillersPage() {
         description:
           "Dermal fillers are injectable treatments designed to restore lost volume, soften lines, and enhance facial contours. Many fillers are hyaluronic acid-based—biocompatible and designed to integrate smoothly for natural-looking outcomes.\n\nOur approach focuses on facial harmony, subtle refinement, and safety-first technique—never an overfilled look.",
         image:
-          "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/FILLER TREATMENT.jpeg",
       }}
       causesTitle="Common Concerns / Goals"
       causes={[

@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function FacePRPPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/prpfacialtreat .jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function FacePRPPage() {
         description:
           "Platelet-Rich Plasma (PRP) therapy uses a small sample of your blood to concentrate platelets rich in growth factors. PRP is then applied or injected into targeted areas to support collagen stimulation and skin rejuvenation.\n\nIt’s commonly chosen for improving skin texture, early fine lines, dullness, and overall skin quality, with a natural approach.",
         image:
-          "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/prpfacialtreat .jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

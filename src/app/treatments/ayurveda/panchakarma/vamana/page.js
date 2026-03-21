@@ -11,7 +11,8 @@ export const metadata = {
 
 export default function VamanaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/vaman2.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -24,7 +25,8 @@ export default function VamanaPage() {
         description:
           "Vamana is a classical Panchakarma procedure designed to eliminate excess Kapha dosha from the upper gastrointestinal and respiratory pathways through a controlled, medically supervised process.\n\nIt is typically considered when Kapha imbalance presents as heaviness, congestion, recurrent allergies, or certain chronic skin/respiratory patterns. Your Ayurvedic doctor will decide suitability after assessment.",
         image:
-          "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/vaman2.jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

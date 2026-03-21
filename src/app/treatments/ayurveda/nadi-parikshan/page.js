@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function NadiParikshanPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    "/nadiparikshan.png";
 
   return (
     <PremiumTreatmentPage
@@ -20,7 +21,8 @@ export default function NadiParikshanPage() {
         description:
           "Nadi Parikshan (pulse diagnosis) is one of Ayurveda’s most refined assessment methods. By reading subtle pulse qualities, the Vaidya evaluates dosha balance (Vata, Pitta, Kapha) and identifies patterns that may be contributing to current symptoms.\n\nIt is a non-invasive consultation that supports early detection, root-cause understanding, and personalized planning.",
         image:
-          "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          "/nadiparikshan.png",
       }}
       causesTitle="What We Commonly Assess"
       causes={[

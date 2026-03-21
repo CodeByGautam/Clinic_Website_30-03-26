@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function TattooRemovalPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/TATTO REMOVAL3.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function TattooRemovalPage() {
         description:
           "Laser tattoo removal uses targeted light pulses to break tattoo ink into smaller fragments, which your body gradually clears over time. Different inks (black vs colored) and different depths respond differently, so treatment planning and spacing between sessions is essential.\n\nWe use safe protocols and aftercare planning to reduce the risk of irritation and support better fading.",
         image:
-          "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/TATTO REMOVAL3.jpeg",
       }}
       causesTitle="What Impacts Results"
       causes={[

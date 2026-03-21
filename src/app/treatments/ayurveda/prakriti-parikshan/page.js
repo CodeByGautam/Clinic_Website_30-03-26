@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function PrakritiParikshanPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    "/prakriti.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -20,7 +21,8 @@ export default function PrakritiParikshanPage() {
         description:
           "Prakriti Parikshan is the assessment of your inborn constitution. In Ayurveda, each person has a unique combination of doshas that influences physical traits, digestion, sleep patterns, stress response, and disease tendencies.\n\nKnowing your Prakriti helps build a truly personalized routine—diet, exercise, and lifestyle—so you can maintain balance and prevent recurring issues.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/prakriti.jpeg",
       }}
       causesTitle="What We Evaluate"
       causes={[

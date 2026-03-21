@@ -7,8 +7,9 @@ export const metadata = {
 
 export default function SkinResurfacingPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
-
+    // "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/skinresurfacing.jpeg";
+    
   return (
     <PremiumTreatmentPage
       title="Skin Resurfacing Treatment"
@@ -19,7 +20,8 @@ export default function SkinResurfacingPage() {
         description:
           "Skin resurfacing focuses on improving texture by encouraging controlled renewal of the skin surface. It is commonly used for acne scars, enlarged pores, fine lines, sun damage, and uneven texture.\n\nTreatment choice depends on skin type, downtime preference, scar depth, and sensitivity.",
         image:
-          "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/skinresurfacing.jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

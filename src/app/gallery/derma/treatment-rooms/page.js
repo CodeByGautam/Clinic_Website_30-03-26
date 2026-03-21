@@ -9,13 +9,13 @@ export const metadata = {
 export default function DermatologyTreatmentRoomsPage() {
   const galleryImages = [
     {
-      src: "/images/derma/treatment-rooms/laser-room.jpg",
+      src: "/Gallery/acne treatment.jpg",
       title: "Laser Treatment Room",
       caption: "Advanced laser therapy space",
       description: "State-of-the-art laser treatment room equipped with advanced laser systems for hair removal, skin resurfacing, and pigmentation treatments."
     },
     {
-      src: "/images/derma/treatment-rooms/facial-room.jpg",
+      src: "/Gallery/scar-revision.jpg",
       title: "Facial Treatment Suite",
       caption: "Premium facial therapy space",
       description: "Luxurious facial treatment suite designed for medi-facials, chemical peels, and advanced skin rejuvenation procedures."

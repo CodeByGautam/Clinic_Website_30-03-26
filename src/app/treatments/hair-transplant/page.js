@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function HairTransplantPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/hairtransplant2.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function HairTransplantPage() {
         description:
           "Hair transplant is a surgical procedure that relocates healthy hair follicles from a donor area (usually the back of the scalp) to thinning or balding areas. It is designed for long-term, natural-looking restoration when planned correctly.\n\nAt Healthfusion, we focus on hairline aesthetics, graft planning, and safe surgical protocols to achieve refined results.",
         image:
-          "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/hairtransplant2.jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

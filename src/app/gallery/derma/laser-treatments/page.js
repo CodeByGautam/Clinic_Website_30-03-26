@@ -9,37 +9,37 @@ export const metadata = {
 export default function LaserTreatmentsPage() {
   const galleryImages = [
     {
-      src: "/images/derma/laser-treatments/hair-removal.jpg",
+      src: "/Gallery/face laser removal .jpeg",
       title: "Laser Hair Removal",
       caption: "Permanent hair reduction",
       description: "Advanced diode laser hair removal treatment showing the precision and effectiveness of our laser technology for all skin types."
     },
     {
-      src: "/images/derma/laser-treatments/skin-resurfacing.jpg",
+      src: "/Gallery/skinresurfacing.jpeg",
       title: "Skin Resurfacing",
       caption: "Fractional CO2 laser therapy",
       description: "Fractional CO2 laser resurfacing treatment for acne scars, wrinkles, and skin texture improvement with precision technology."
     },
     {
-      src: "/images/derma/laser-treatments/tattoo-removal.jpg",
+      src: "/Gallery/tatto removal.jpeg",
       title: "Tattoo Removal",
       caption: "Q-switched laser therapy",
       description: "Professional Q-switched laser tattoo removal session showing the gradual fading of tattoo ink without damaging surrounding skin."
     },
     {
-      src: "/images/derma/laser-treatments/pigmentation.jpg",
+      src: "/Gallery/pigmentationlaser.jpeg",
       title: "Pigmentation Laser",
       caption: "Dark spot reduction therapy",
       description: "Advanced laser treatment for melasma, sun spots, and pigmentation disorders using targeted wavelength technology."
     },
     {
-      src: "/images/derma/laser-treatments/vascular.jpg",
+      src: "/Gallery/vascularlaser.jpeg",
       title: "Vascular Laser Treatment",
       caption: "Spider vein therapy",
       description: "Specialized vascular laser treatment for spider veins, rosacea, and vascular lesions with precise targeting."
     },
     {
-      src: "/images/derma/laser-treatments/laser-facial.jpg",
+      src: "/Gallery/ledmask.jpeg",
       title: "Laser Facial Rejuvenation",
       caption: "Skin tightening therapy",
       description: "Non-ablative laser facial treatment for collagen stimulation, skin tightening, and overall facial rejuvenation."

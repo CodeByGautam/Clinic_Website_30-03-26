@@ -52,37 +52,37 @@ export default function PanchakarmaPage() {
     {
       title: "Vamana",
       description: "Therapeutic vomiting therapy to eliminate excess Kapha toxins from the upper digestive tract.",
-      icon: "🌿",
+      img: "/Gallery/vaman2.jpeg",
       href: "/treatments/ayurveda/panchakarma/vamana"
     },
     {
       title: "Virechana",
       description: "Purgation therapy to remove Pitta toxins from the liver, gallbladder, and intestines.",
-      icon: "🔥",
+      img: "/virechana.jpg",
       href: "/treatments/ayurveda/panchakarma/virechana"
     },
     {
       title: "Basti",
       description: "Medicated enema therapy to cleanse the colon and balance Vata dosha.",
-      icon: "💧",
+      img: "/Gallery/BASTI.jpg",
       href: "/treatments/ayurveda/panchakarma/basti"
     },
     {
       title: "Nasya",
       description: "Nasal administration therapy to clear sinuses and treat head-neck disorders.",
-      icon: "👃",
+      img: "/nasya.jpg",
       href: "/treatments/ayurveda/panchakarma/nasya"
     },
     {
       title: "Raktamokshana",
       description: "Bloodletting therapy to remove impure blood and treat blood-related disorders.",
-      icon: "🩸",
+      img: "/Gallery/raktamokshan.png",
       href: "/treatments/ayurveda/panchakarma/raktamokshana"
     },
     {
       title: "Shirodhara",
       description: "Forehead oil flow therapy for mental relaxation and neurological conditions.",
-      icon: "🧘",
+      img: "/shirodhara3.jpg",
       href: "/treatments/ayurveda/panchakarma/shirodhara"
     }
   ];
@@ -95,9 +95,11 @@ export default function PanchakarmaPage() {
         description="Panchakarma is a powerful Ayurvedic detoxification therapy designed to cleanse the body of accumulated toxins and restore balance between the three doshas – Vata, Pitta and Kapha."
       />
 
-      <TreatmentProcess steps={steps} />
+      
 
       <TreatmentGrid treatments={therapies} />
+
+      <TreatmentProcess steps={steps} />
 
       <TreatmentFAQ faqs={faqs} />
 

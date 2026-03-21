@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function SkinBoosterPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    "/skin-brightening.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function SkinBoosterPage() {
         description:
           "Skin boosters are micro-injections commonly formulated with hyaluronic acid designed to improve hydration and skin quality from within. Unlike dermal fillers (which add volume and shape), skin boosters focus on glow, elasticity, and overall texture improvement.\n\nThey’re often chosen for dehydrated skin, dullness, early fine lines, and rough texture.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/skin-brightening.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

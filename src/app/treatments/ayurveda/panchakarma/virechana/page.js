@@ -11,7 +11,8 @@ export const metadata = {
 
 export default function VirechanaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    "/virechana.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -24,7 +25,8 @@ export default function VirechanaPage() {
         description:
           "Virechana is a classical Panchakarma therapy designed to eliminate excess Pitta dosha through a controlled purgation protocol under medical supervision. It is traditionally considered for inflammatory patterns, digestive imbalance, and certain chronic skin concerns when appropriate.\n\nSuitability and the exact protocol depend on your constitution and symptoms—your Ayurvedic doctor will guide planning.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/virechana.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

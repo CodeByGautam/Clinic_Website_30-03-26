@@ -9,23 +9,23 @@ export default function OurDoctorsPage() {
   const doctors = [
     {
       name: "Dr. Ajay Devershi",
-      qualification: "MBBS, DNB (General Surgery)",
-      specialization: "General Surgeon & Laparoscopic Surgeon",
-      image: "/images/dr.Ajay.webp",
+      qualification: "MBBS, DNB (General Surgery) - General Surgeon, Laparoscopic Surgeon",
+      // specialization: "General Surgeon & Laparoscopic Surgeon",
+      image: "/ajay.jpeg",
       color: "#00A651"
     },
     {
       name: "Dr. Shruti Jadhav Devershi",
-      qualification: "MBBS, DDVL",
-      specialization: "Dermatologist, Cosmetologist, Trichologist",
-      image: "/images/Dr.Shruti.jpg",
+      qualification: "MBBS, DDVL — Specializes in Dermatology, Costmetology, Trichology",
+      // specialization: "Dermatologist, Cosmetologist, Trichologist",
+      image: "/shruti.jpeg",
       color: "#0077C8"
     },
     {
       name: "Dr. Shubhi Rao",
-      qualification: "BAMS, M.D. (Ayurveda)",
-      specialization: "Ayurveda Specialist & Panchakarma Expert",
-      image: "/images/shubhi.jpg",
+      qualification: "BAMS, M.D. — Specialized in Ayurveda",
+      // specialization: "Ayurveda Specialist & Panchakarma Expert",
+      image: "/shubhi.jpg",
       color: "#00A651"
     }
   ];
@@ -57,17 +57,17 @@ export default function OurDoctorsPage() {
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div 
+                {/* <div 
                   className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-semibold text-white"
                   style={{ backgroundColor: doctor.color }}
                 >
                   {doctor.specialization.split(',')[0]}
-                </div>
+                </div> */}
               </div>
               <div className="p-4">
                 <h3 className="text-lg font-bold text-[#0B0F19] mb-1">{doctor.name}</h3>
                 <p className="text-xs font-medium mb-1" style={{ color: doctor.color }}>{doctor.qualification}</p>
-                <p className="text-gray-600 text-xs">{doctor.specialization}</p>
+                {/* <p className="text-gray-600 text-xs">{doctor.specialization}</p> */}
               </div>
             </div>
           ))}

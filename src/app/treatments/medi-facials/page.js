@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function MediFacialsPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/MEDIFACIAL.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function MediFacialsPage() {
         description:
           "Medi facials are clinical facials that go beyond spa-level skincare. They use medical-grade products and technology, and they’re customized for concerns like dullness, congestion, uneven tone, early ageing, and sensitivity.\n\nYour session is designed to be results-driven while still feeling premium and relaxing—with safe protocols and professional aftercare guidance.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/MEDIFACIAL.jpeg",
       }}
       causesTitle="Concerns Medi Facials Target"
       causes={[

@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function SkinBrighteningPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80";
+    "/skin-brightening.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function SkinBrighteningPage() {
         description:
           "Skin can appear dull or uneven due to sun exposure, dehydration, pigmentation, post-acne marks, and a weakened skin barrier. Brightening is not about changing your natural tone—it’s about improving clarity, glow, and evenness.\n\nAt Healthfusion, we build a dermatologist-guided plan using safe actives and procedures to target spots and enhance radiance.",
         image:
-          "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=2400&q=80",
+          "/skin-brightening.jpg"
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

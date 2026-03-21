@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function FaceToningPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80";
-
+    // "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80";
+     "/skin-clean.webp"
   return (
     <PremiumTreatmentPage
       title="Face Toning"
@@ -19,7 +19,8 @@ export default function FaceToningPage() {
         description:
           "Face toning uses controlled stimulation (such as microcurrent or EMS-style technologies) to activate facial muscles and support circulation. The goal is a naturally lifted appearance, improved contour, and support for collagen and skin firmness.\n\nIt’s often chosen for early sagging, tired-looking features, and those wanting a non-invasive glow + lift experience.",
         image:
-          "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=2400&q=80",
+          "/skin-clean.webp",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

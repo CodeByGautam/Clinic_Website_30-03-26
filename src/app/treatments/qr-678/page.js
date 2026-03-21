@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function QR678Page() {
   const heroImage =
-    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/QR-678.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function QR678Page() {
         description:
           "QR-678 is a peptide-based formulation delivered via micro-injections into the scalp. It is designed to target follicles and support improved growth signals in suitable candidates.\n\nYour dermatologist will assess your hair-loss pattern, scalp health, and suitability before recommending QR-678 as part of a broader hair restoration plan.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/QR-678.jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

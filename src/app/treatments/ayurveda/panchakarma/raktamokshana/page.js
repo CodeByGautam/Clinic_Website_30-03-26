@@ -11,7 +11,8 @@ export const metadata = {
 
 export default function RaktamokshanaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/Raktamokshan.png";
 
   return (
     <PremiumTreatmentPage
@@ -24,7 +25,8 @@ export default function RaktamokshanaPage() {
         description:
           "Raktamokshana is a classical Panchakarma therapy traditionally indicated when vitiated doshas affect Rakta dhatu (blood tissue). It is considered for certain chronic skin disorders and inflammatory patterns in suitable candidates.\n\nDifferent methods may be used (such as leech therapy or other classical techniques) depending on the condition and constitution. Your Ayurvedic doctor will guide suitability and protocol selection.",
         image:
-          "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/Raktamokshan.png",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

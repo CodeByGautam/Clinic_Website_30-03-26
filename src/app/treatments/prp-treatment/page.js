@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function PRPtreatmentPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/HAIRPRP2.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function PRPtreatmentPage() {
         description:
           "Platelet-Rich Plasma (PRP) is prepared from a small sample of your blood, concentrating platelets that contain growth factors. PRP is injected into targeted scalp areas to support circulation and follicle stimulation.\n\nPRP is commonly used for hair thinning and early pattern hair loss, and it is often combined with medical therapy and scalp care for better outcomes.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/HAIRPRP2.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

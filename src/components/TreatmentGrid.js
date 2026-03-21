@@ -31,10 +31,18 @@ export default function TreatmentGrid({
                 style={{ background: `linear-gradient(135deg, ${primaryColor}10, ${secondaryColor}10)` }}
               >
                 <div 
-                  className="w-20 h-20 rounded-full flex items-center justify-center"
+                  className="w-70 h-45 rounded-full flex items-center justify-center overflow-hidden"
                   style={{ backgroundColor: `${primaryColor}15` }}
                 >
-                  <span className="text-4xl">{treatment.icon}</span>
+                  {treatment.img ? (
+                    <img 
+                      src={treatment.img} 
+                      alt={treatment.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <span className="text-4xl">{treatment.icon}</span>
+                  )}
                 </div>
               </div>
               <div className="p-6">

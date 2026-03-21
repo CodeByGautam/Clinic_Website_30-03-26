@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function AgnikarmaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/agnikarma.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -20,7 +21,8 @@ export default function AgnikarmaPage() {
         description:
           "Agnikarma is a classical Ayurvedic procedure involving controlled heat application to specific points. It is traditionally used for certain Vata-related pain patterns including chronic joint pain, stiffness, and musculoskeletal discomfort.\n\nSuitability is assessed carefully and the procedure is planned with safety-first protocols.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/agnikarma.jpeg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function OrganicPeelsPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/organicpeel.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function OrganicPeelsPage() {
         description:
           "Organic peels use fruit enzymes and botanical extracts to exfoliate dead skin cells and improve skin clarity. Compared to stronger chemical peels, organic peels are typically gentler and can be a good option for those looking for mild rejuvenation with comfort-focused care.\n\nYour dermatologist will recommend the best peel strength and schedule based on your skin type, sensitivity, and goals.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/organicpeel.jpeg",
       }}
       causesTitle="Common Concerns It Helps"
       causes={[

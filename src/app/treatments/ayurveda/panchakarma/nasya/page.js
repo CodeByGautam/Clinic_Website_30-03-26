@@ -11,7 +11,8 @@ export const metadata = {
 
 export default function NasyaPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/Nasya-1.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -24,7 +25,8 @@ export default function NasyaPage() {
         description:
           "Nasya is a classical Panchakarma procedure that involves administration of medicated oils, herbal juices, or powders through the nasal passage. In Ayurveda, the nose is considered the gateway to the head region, and Nasya is traditionally used for head–neck concerns including sinus congestion, headaches, and certain Kapha/Vata imbalances.\n\nThe exact type of Nasya (cleansing vs nourishing) is selected based on your constitution and symptoms.",
         image:
-          "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/Nasya-1.jpg",
       }}
       causesTitle="Common Concerns / Symptoms"
       causes={[

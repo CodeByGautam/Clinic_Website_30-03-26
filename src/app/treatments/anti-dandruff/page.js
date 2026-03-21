@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function AntiDandruffPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/ANTIDANDRUFF.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function AntiDandruffPage() {
         description:
           "Dandruff is a common scalp condition that causes flaking, itching, and irritation. It can be triggered by dry scalp, fungal overgrowth, seborrheic dermatitis, product buildup, or inflammation.\n\nOur approach starts with scalp evaluation and then combines medical therapy with scalp-care routines to reduce recurrence.",
         image:
-          "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/ANTIDANDRUFF.jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[

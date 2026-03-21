@@ -7,7 +7,8 @@ export const metadata = {
 
 export default function FrecklesTreatmentPage() {
   const heroImage =
-    "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80";
+    // "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=2400&q=80";
+    "/Gallery/FILLER TREATMENT.jpeg";
 
   return (
     <PremiumTreatmentPage
@@ -19,7 +20,8 @@ export default function FrecklesTreatmentPage() {
         description:
           "Freckles are small, concentrated spots of melanin that commonly appear on sun-exposed areas. They are harmless, but many people choose treatment to reduce their appearance and improve overall tone uniformity.\n\nOur approach focuses on controlling pigmentation triggers, using targeted procedures, and building a long-term maintenance and sunscreen routine to reduce recurrence.",
         image:
-          "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          // "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=2400&q=80",
+          "/Gallery/FILLER TREATMENT.jpeg",
       }}
       causesTitle="Common Causes / Symptoms"
       causes={[
