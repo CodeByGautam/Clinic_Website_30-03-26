@@ -5,13 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AppointmentModal from "@/components/AppointmentModal";
 import { treatments } from "@/data/treatments";
+import { FaInstagram, FaFacebookF, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import { 
   ChevronDown, 
   Calendar, 
   Phone, 
   Menu, 
-  X,
-  Globe
+  X
 } from "lucide-react";
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
 
   const quickLinks = [
     { name: "About Us", href: "/about" },
-    { name: "Blog", href: "#blog" },
+    { name: "Blog", href: "/blog" },
     { name: "Ask Expert", href: "#expert" },
   ];
 
@@ -39,52 +39,41 @@ export default function Navbar() {
     skinTreatments: {
       title: "Skin Treatments",
       items: [
-        { name: "Acne Treatment", href: "/treatments/acne" },
-        { name: "Skin Brightening", href: "/treatments/skin-brightening" },
-        { name: "Anti-Ageing Treatment", href: "/treatments/anti-ageing" },
-        { name: "Hydrafacial", href: "/treatments/hydrafacial" },
-        { name: "Organic Peels", href: "/treatments/organic-peels" },
-        { name: "Medi Facials", href: "/treatments/medi-facials" },
-        { name: "Freckles Treatment", href: "/treatments/freckles-treatment" },
-        { name: "MNRF Treatment", href: "/treatments/mnrf-treatment" },
-        { name: "Fillers", href: "/treatments/fillers" },
-        { name: "Glow Drips", href: "/treatments/glow-drips" },
-        { name: "Face PRP", href: "/treatments/face-prp" },
-        { name: "Face Fat Reduction", href: "/treatments/face-fat-reduction" },
-        { name: "Face Toning", href: "/treatments/face-toning" },
-        { name: "Skin Booster", href: "/treatments/skin-booster" },
+        { name: "Acne Treatment", href: "/dermatology/acne" },
+        { name: "Skin Brightening", href: "/dermatology/skin-brightening" },
+        { name: "Anti-Ageing Treatment", href: "/dermatology/anti-ageing" },
+        { name: "Hydrafacial", href: "/dermatology/hydrafacial" },
+        { name: "Organic Peels", href: "/dermatology/organic-peels" },
+        { name: "Medi Facials", href: "/dermatology/medi-facials" },
+        { name: "Freckles Treatment", href: "/dermatology/freckles-treatment" },
+        { name: "MNRF Treatment", href: "/dermatology/mnrf-treatment" },
+        { name: "Fillers", href: "/dermatology/fillers" },
+        { name: "Glow Drips", href: "/dermatology/glow-drips" },
+        { name: "Face PRP", href: "/dermatology/face-prp" },
+        { name: "Face Fat Reduction", href: "/dermatology/face-fat-reduction" },
+        { name: "Face Toning", href: "/dermatology/face-toning" },
+        { name: "Skin Booster", href: "/dermatology/skin-booster" },
       ],
     },
     hairTreatments: {
       title: "Hair Treatments",
       items: [
-        { name: "Hair & Scalp Therapy", href: "/treatments/hair-scalp-therapy" },
-        { name: "Hair Transplant", href: "/treatments/hair-transplant" },
-        { name: "Hair Loss Treatment", href: "/treatments/hair-loss" },
-        { name: "PRP Treatment", href: "/treatments/prp-treatment" },
-        { name: "GFC Treatment", href: "/treatments/gfc-treatment" },
-        { name: "Anti-Dandruff Treatment", href: "/treatments/anti-dandruff" },
-        { name: "QR-678 Treatment", href: "/treatments/qr-678" },
+        { name: "Hair & Scalp Therapy", href: "/dermatology/hair-scalp-therapy" },
+        { name: "Hair Transplant", href: "/dermatology/hair-transplant" },
+        { name: "Hair Loss Treatment", href: "/dermatology/hair-loss" },
+        { name: "PRP Treatment", href: "/dermatology/prp-treatment" },
+        { name: "GFC Treatment", href: "/dermatology/gfc-treatment" },
+        { name: "Anti-Dandruff Treatment", href: "/dermatology/anti-dandruff" },
+        { name: "QR-678 Treatment", href: "/dermatology/qr-678" },
       ],
     },
     laserTreatments: {
       title: "Laser Treatments",
       items: [
-        { name: "Laser Hair Removal", href: "/treatments/laser-hair-removal" },
-        { name: "Skin Resurfacing", href: "/treatments/skin-resurfacing" },
-        { name: "Tattoo Removal", href: "/treatments/tattoo-removal" },
-        { name: "Laser De-Pigmentation", href: "/treatments/laser-depigmentation" },
-      ],
-    },
-    ayurvedaTreatments: {
-      title: "Ayurveda Treatments",
-      items: [
-        { name: "Nadi Parikshan", href: "/treatments/ayurveda/nadi-parikshan" },
-        { name: "Prakriti Parikshan", href: "/treatments/ayurveda/prakriti-parikshan" },
-        { name: "Agnikarma", href: "/treatments/ayurveda/agnikarma" },
-        { name: "Viddhakarma", href: "/treatments/ayurveda/viddhakarma" },
-        { name: "Suvarnaprashan", href: "/treatments/ayurveda/suvarnaprashan" },
-        { name: "Panchakarma", href: "/treatments/ayurveda/panchakarma" },
+        { name: "Laser Hair Removal", href: "/dermatology/laser-hair-removal" },
+        { name: "Skin Resurfacing", href: "/dermatology/skin-resurfacing" },
+        { name: "Tattoo Removal", href: "/dermatology/tattoo-removal" },
+        { name: "Laser De-Pigmentation", href: "/dermatology/laser-depigmentation" },
       ],
     },
   };
@@ -124,10 +113,10 @@ export default function Navbar() {
 
   const mainMenuItems = [
     { 
-      name: "Treatments", 
+      name: "Dermatology", 
       hasDropdown: true, 
       dropdownType: "mega",
-      href: "#treatments" 
+      href: "/allopathy" 
     },
     { 
       name: "Ayurveda", 
@@ -169,17 +158,12 @@ export default function Navbar() {
   return (
     <>
       {/* Top Information Bar */}
-      <div className="bg-gray-100 text-gray-600 text-sm sticky top-0 z-[60]">
+      <div className="bg-gray-100 text-gray-600 text-sm">
         <div className="max-w-7xl mx-auto px-6 py-2">
           <div className="flex items-center justify-between">
-            {/* Left - Language Selector */}
+            {/* Left - placeholder for alignment */}
             <div className="flex items-center gap-2">
-              <Globe className="w-4 h-4" />
-              <select className="bg-transparent border-none outline-none text-sm cursor-pointer">
-                <option>English</option>
-                <option>हिंदी</option>
-                <option>मराठी</option>
-              </select>
+              <span className="text-sm text-gray-500 hidden sm:inline">Kharadi, Pune</span>
             </div>
 
             {/* Center - Quick Links */}
@@ -197,7 +181,44 @@ export default function Navbar() {
 
             {/* Right - Customer Care */}
             <div className="flex items-center gap-4 text-base">
-              <span className="hidden sm:inline">Customer Care - 9:30 AM to 6:30 PM</span>
+              <div className="flex items-center gap-5 md:gap-6">
+                <a
+                  href="https://www.instagram.com/health.fusion33/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-lg text-pink-500 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-md"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581135523218"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="text-lg text-blue-600 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-md"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://wa.me/919270216369"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="text-lg text-green-500 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-md"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Healthfusion+MultiSpecialty/@18.5610646,73.9449121,17z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Google Maps"
+                  className="text-lg text-red-500 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-md"
+                >
+                  <FaMapMarkerAlt />
+                </a>
+              </div>
               <a 
                 href="tel:9270216369" 
                 className="flex items-center gap-2 text-[#0077C8] font-semibold hover:text-blue-700 transition-colors"
@@ -212,10 +233,10 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav
-        className={`sticky top-8 z-50 transition-all duration-300 ${
+        className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white shadow-lg"
-            : "bg-white shadow-sm"
+            ? "bg-white/90 backdrop-blur-md shadow-md"
+            : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6">
@@ -275,7 +296,7 @@ export default function Navbar() {
                       {/* View All Button */}
                       <div className="mt-6 pt-6 border-t border-gray-100 text-center">
                         <Link
-                          href="/treatments"
+                          href="/dermatology"
                           className="inline-flex items-center gap-2 bg-[#0077C8] text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
                         >
                           View All Treatments
@@ -406,15 +427,17 @@ export default function Navbar() {
                   {/* Treatments with Submenu */}
                   <div>
                     <button
-                      onClick={() => setActiveDropdown(activeDropdown === "Treatments" ? null : "Treatments")}
+                      onClick={() => setActiveDropdown(activeDropdown === "Dermatology" ? null : "Dermatology")}
                       className="flex items-center justify-between w-full py-3 text-lg font-medium text-[#0B0F19] border-b border-gray-100"
                     >
-                      Treatments
-                      <ChevronDown className={`w-5 h-5 transition-transform ${activeDropdown === "Treatments" ? "rotate-180" : ""}`} />
+                      Dermatology
+                      <ChevronDown className={`w-5 h-5 transition-transform ${activeDropdown === "Dermatology" ? "rotate-180" : ""}`} />
                     </button>
-                    {activeDropdown === "Treatments" && (
+                    {activeDropdown === "Dermatology" && (
                       <div className="pl-4 py-3 space-y-3">
-                        {Object.values(megaMenuData).map((category) => (
+                        {Object.values(megaMenuData)
+                          .filter((category) => category.title !== "Ayurveda Treatments")
+                          .map((category) => (
                           <div key={category.title} className="mb-4">
                             <h4 className="font-semibold text-[#00A651] mb-2">{category.title}</h4>
                             <ul className="space-y-2">
@@ -524,7 +547,7 @@ export default function Navbar() {
                   {mainMenuItems
                     .filter(
                       (item) =>
-                        item.name !== "Treatments" &&
+                        item.name !== "Dermatology" &&
                         item.name !== "Ayurveda" &&
                         item.name !== "Gallery"
                     )

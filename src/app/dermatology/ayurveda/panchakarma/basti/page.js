@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Basti therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic medicated enema treatment for Vata balance, joint pain, and colon cleansing. Book your consultation today.",
   keywords: ["Basti therapy Pune", "Panchakarma Kharadi", "Ayurvedic enema Pune", "Vata treatment", "joint pain Ayurveda", "colon cleanse Pune", "Ayurveda clinic Kharadi"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/basti"
+    canonical: "/dermatology/ayurveda/panchakarma/basti"
   }
 };
 

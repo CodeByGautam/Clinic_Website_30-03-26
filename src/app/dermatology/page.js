@@ -8,31 +8,31 @@ export default function TreatmentsPage() {
     {
       title: "Acne Treatment",
       description: "Effective solutions for acne and acne scars",
-      href: "/treatments/acne",
+      href: "/dermatology/acne",
       icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
     },
     {
       title: "Anti-Ageing Treatment",
       description: "Turn back time with our anti-ageing solutions",
-      href: "/treatments/anti-ageing",
+      href: "/dermatology/anti-ageing",
       icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
     },
     {
       title: "Skin Brightening",
       description: "Achieve radiant, even-toned skin",
-      href: "/treatments/skin-brightening",
+      href: "/dermatology/skin-brightening",
       icon: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
     },
     {
       title: "Hair & Scalp Therapy",
       description: "Solutions for hair loss and scalp conditions",
-      href: "/treatments/hair-scalp-therapy",
+      href: "/dermatology/hair-scalp-therapy",
       icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
     },
     {
       title: "Skin Resurfacing",
       description: "Advanced treatments for skin texture and scars",
-      href: "/treatments/skin-resurfacing",
+      href: "/dermatology/skin-resurfacing",
       icon: "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z",
     },
   ];

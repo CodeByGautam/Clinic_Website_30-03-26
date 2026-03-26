@@ -14,7 +14,7 @@ export default function AyurvedaTreatmentsPage() {
       subtitle: "Pulse Diagnosis",
       description: "Ancient Ayurvedic pulse reading to determine your unique constitution, identify health imbalances, and create personalized treatment plans.",
       icon: <Activity className="w-8 h-8" />,
-      href: "/treatments/ayurveda/nadi-parikshan",
+      href: "/dermatology/ayurveda/nadi-parikshan",
       color: "#00A651",
       benefits: ["Non-invasive diagnosis", "Early detection", "Holistic assessment"]
     },
@@ -23,7 +23,7 @@ export default function AyurvedaTreatmentsPage() {
       subtitle: "Constitution Analysis",
       description: "Comprehensive analysis to discover your unique Ayurvedic constitution (Vata, Pitta, Kapha) for personalized diet and lifestyle recommendations.",
       icon: <Sparkles className="w-8 h-8" />,
-      href: "/treatments/ayurveda/prakriti-parikshan",
+      href: "/dermatology/ayurveda/prakriti-parikshan",
       color: "#0077C8",
       benefits: ["Personalized wellness", "Disease prevention", "Optimal lifestyle"]
     },
@@ -32,7 +32,7 @@ export default function AyurvedaTreatmentsPage() {
       subtitle: "Thermal Therapy",
       description: "Controlled heat application therapy for chronic pain, joint disorders, and musculoskeletal conditions. Non-surgical pain management solution.",
       icon: <div className="text-2xl">🔥</div>,
-      href: "/treatments/ayurveda/agnikarma",
+      href: "/dermatology/ayurveda/agnikarma",
       color: "#F97316",
       benefits: ["Pain relief", "Improved mobility", "Long-lasting results"]
     },
@@ -41,7 +41,7 @@ export default function AyurvedaTreatmentsPage() {
       subtitle: "Detoxification Therapy",
       description: "Therapeutic bloodletting for deep detoxification, treating skin disorders, joint conditions, and systemic imbalances. Ancient Panchakarma therapy.",
       icon: <div className="text-2xl">💧</div>,
-      href: "/treatments/ayurveda/viddhakarma",
+      href: "/dermatology/ayurveda/viddhakarma",
       color: "#DC2626",
       benefits: ["Deep detox", "Skin clarity", "Immunity boost"]
     },
@@ -50,7 +50,7 @@ export default function AyurvedaTreatmentsPage() {
       subtitle: "Pediatric Immunization",
       description: "Ancient Ayurvedic immunization for children using purified gold and herbs. Enhances immunity, intelligence, and healthy growth in kids.",
       icon: <div className="text-2xl">⭐</div>,
-      href: "/treatments/ayurveda/suvarnaprashan",
+      href: "/dermatology/ayurveda/suvarnaprashan",
       color: "#FFD700",
       benefits: ["Boosts immunity", "Enhances IQ", "Healthy growth"]
     }
@@ -286,7 +286,7 @@ export default function AyurvedaTreatmentsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/treatments/ayurveda/nadi-parikshan"
+              href="/dermatology/ayurveda/nadi-parikshan"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#0077C8] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg"
             >
               <Heart className="w-5 h-5" />

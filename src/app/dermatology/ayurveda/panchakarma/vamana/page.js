@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Vamana therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic therapeutic vomiting treatment for Kapha detox, respiratory health, and skin disorders. Book your consultation today.",
   keywords: ["Vamana therapy Pune", "Panchakarma Kharadi", "Ayurvedic detox Pune", "Kapha treatment", "respiratory treatment Pune", "skin disorder Ayurveda", "Ayurveda clinic Kharadi"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/vamana"
+    canonical: "/dermatology/ayurveda/panchakarma/vamana"
   }
 };
 

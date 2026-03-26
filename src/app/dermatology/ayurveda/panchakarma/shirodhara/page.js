@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Shirodhara therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic forehead oil flow treatment for stress relief, insomnia, anxiety, and neurological wellness. Book your consultation today.",
   keywords: ["Shirodhara therapy Pune", "Panchakarma Kharadi", "Ayurvedic stress treatment", "insomnia cure Pune", "anxiety treatment Ayurveda", "mind relaxation Pune", "Ayurveda clinic Kharadi"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/shirodhara"
+    canonical: "/dermatology/ayurveda/panchakarma/shirodhara"
   }
 };
 

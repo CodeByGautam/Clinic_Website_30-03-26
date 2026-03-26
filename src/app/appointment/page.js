@@ -90,8 +90,8 @@ export default function AppointmentPage() {
                       What happens next?
                     </p>
                     <p className="mt-1 text-sm text-gray-600 leading-relaxed">
-                      After you submit, we’ll email your appointment request to our
-                      clinic team. You’ll receive a confirmation call/message with the
+                      After you submit, we'll email your appointment request to our
+                      clinic team. You'll receive a confirmation call/message with the
                       final timing.
                     </p>
                   </div>

@@ -8,32 +8,32 @@ export default function PopularTreatments() {
   const treatments = [
     {
       title: "Acne Treatment",
-      href: "/treatments/acne",
+      href: "/dermatology/acne",
       image: "/acne.jpg",
     },
     {
       title: "Anti-Ageing Treatment",
-      href: "/treatments/anti-ageing",
+      href: "/dermatology/anti-ageing",
       image: "/enti-aging.jpg",
     },
     {
       title: "Skin Brightening",
-      href: "/treatments/skin-brightening",
+      href: "/dermatology/skin-brightening",
       image: "/skin-brightening.jpg",
     },
     {
       title: "Hair & Scalp Therapy",
-      href: "/treatments/hair-scalp-therapy",
+      href: "/dermatology/hair-scalp-therapy",
       image: "/hair.jpg",
     },
     {
       title: "Skin Resurfacing",
-      href: "/treatments/skin-resurfacing",
+      href: "/dermatology/skin-resurfacing",
       image: "/skin-resurfacing.webp",
     },
     {
       title: "Skin Cleanse",
-      href: "/treatments/skin-cleanse",
+      href: "/dermatology/skin-cleanse",
       image: "/skin-clean.webp",
     },
   ];
@@ -174,7 +174,7 @@ export default function PopularTreatments() {
         {/* View All Button */}
         <div className="text-center mt-16">
           <Link
-            href="/treatments"
+            href="/dermatology"
             className="inline-flex items-center gap-2 bg-[#0077C8] text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             View All Treatments

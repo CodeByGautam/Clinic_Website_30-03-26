@@ -13,18 +13,14 @@ import {
 } from "lucide-react";
 import TreatmentFAQ from "@/components/TreatmentFAQ";
 import BackButton from "@/components/BackButton";
-import VideoSection from "@/components/VideoSection";
-import { videos } from "@/data/videos";
 
 export default function PremiumTreatmentPage({
   title,
   description,
   heroImage,
-  videoCategory = "clinic",
-  videoMaxItems = 3,
   heroLabel = "Trusted Dermatology Clinic",
   heroPrimaryCta = { label: "Book Free Consultation", href: "/appointment" },
-  heroSecondaryCta = { label: "View Other Treatments", href: "/treatments" },
+  heroSecondaryCta = { label: "View Other Treatments", href: "/dermatology" },
   understanding = {
     title: "Understanding the Condition",
     description: "",
@@ -53,15 +49,6 @@ export default function PremiumTreatmentPage({
     secondary: { label: "Call Now", href: "tel:+919270216369" },
   },
 }) {
-  const filteredVideos = (Array.isArray(videos) ? videos : []).filter((v) => {
-    if (!videoCategory) return true;
-    return v.category === videoCategory;
-  });
-
-  const videoItems = filteredVideos.length
-    ? filteredVideos
-    : (Array.isArray(videos) ? videos : []).filter((v) => v.category === "clinic");
-
   return (
     <div className="bg-white">
       <section className="relative w-full min-h-[55vh] lg:min-h-[70vh] overflow-hidden">
@@ -117,13 +104,6 @@ export default function PremiumTreatmentPage({
           </div>
         </div>
       </section>
-
-      <VideoSection
-        title="See Our Multispeciality Clinic Interior"
-        subtitle="Real ambiance of our clinic"
-        videos={videoItems}
-        maxItems={videoMaxItems}
-      />
 
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

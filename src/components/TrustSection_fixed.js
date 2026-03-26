@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function TrustSection() {
@@ -11,7 +9,7 @@ export default function TrustSection() {
         </svg>
       ),
       text: "Google Rating",
-      subtext: "⭐⭐⭐⭐⭐ 4.9/5",
+      subtext: "⭐⭐⭐⭐ 4.9/5",
     },
     {
       icon: (

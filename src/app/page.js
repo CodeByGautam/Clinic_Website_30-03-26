@@ -18,8 +18,8 @@ export default function Home() {
       <HeroSection />
       <DualTreatmentSection />
       <VideoSection
-        title="See Our Multispeciality Clinic Interior"
-        subtitle="Real ambiance of our clinic"
+        title="Virtour Tour"
+        subtitle="Visit Our Clinic Virtually"
         videos={videos}
         maxItems={4}
       />

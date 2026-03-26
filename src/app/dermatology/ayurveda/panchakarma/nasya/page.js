@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Nasya therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic nasal treatment for sinusitis, migraines, allergies, and head-neck disorders. Book your consultation today.",
   keywords: ["Nasya therapy Pune", "Panchakarma Kharadi", "Ayurvedic nasal treatment", "sinus treatment Pune", "migraine Ayurveda", "allergy treatment Pune", "Ayurveda clinic Kharadi"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/nasya"
+    canonical: "/dermatology/ayurveda/panchakarma/nasya"
   }
 };
 

@@ -3,7 +3,7 @@
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export default function BackButton({ fallbackHref = "/treatments", className = "" }) {
+export default function BackButton({ fallbackHref = "/dermatology", className = "" }) {
   const router = useRouter();
 
   const handleBack = () => {

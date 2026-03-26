@@ -40,7 +40,7 @@ export default function OurClinicsPage() {
               ))}
             </div>
             <Link 
-              href="/treatments/ayurveda/panchakarma" 
+              href="/dermatology/ayurveda/panchakarma" 
               className="inline-flex items-center gap-2 text-[#00A651] font-semibold text-sm hover:gap-3 transition-all"
             >
               Explore Ayurveda <ArrowRight className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function OurClinicsPage() {
               ))}
             </div>
             <Link 
-              href="/treatments" 
+              href="/dermatology" 
               className="inline-flex items-center gap-2 text-[#0077C8] font-semibold text-sm hover:gap-3 transition-all"
             >
               Explore Dermatology <ArrowRight className="w-4 h-4" />

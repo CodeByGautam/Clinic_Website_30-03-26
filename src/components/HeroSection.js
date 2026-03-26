@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero1.jpg"
+          src="/Gallery/home4.png"
           alt="Advanced Skin and Hair Treatment Clinic"
           fill
           priority
@@ -52,7 +52,7 @@ export default function HeroSection() {
               {/* Primary Button */}
               <Link
                 href="/appointment"
-                className="inline-flex items-center justify-center bg-[#0077C8] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center bg-[#0077C8] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-blue-700 transition-all duration-300 hover:-translate-y-0.5"
               >
                 Book Appointment
               </Link>
@@ -95,8 +95,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      {/* Bottom Fade Removed */}
     </section>
   );
 }

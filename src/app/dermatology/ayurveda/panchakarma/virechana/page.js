@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Virechana therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic purgation treatment for skin diseases, liver detox, and Pitta balance. Book your consultation today.",
   keywords: ["Virechana therapy Pune", "Panchakarma Kharadi", "Ayurvedic detox Pune", "purgation therapy", "Ayurveda treatment Kharadi", "liver detox Ayurveda", "skin treatment Pune"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/virechana"
+    canonical: "/dermatology/ayurveda/panchakarma/virechana"
   }
 };
 

@@ -5,7 +5,7 @@ export const metadata = {
   description: "Experience authentic Raktamokshana therapy in Pune at our Panchakarma Centre Kharadi. Ayurvedic bloodletting treatment for skin diseases, joint disorders, and blood purification. Book your consultation today.",
   keywords: ["Raktamokshana therapy Pune", "Panchakarma Kharadi", "Ayurvedic bloodletting", "skin disease treatment Pune", "blood purification Ayurveda", "leech therapy Pune", "Ayurveda clinic Kharadi"],
   alternates: {
-    canonical: "/treatments/ayurveda/panchakarma/raktamokshana"
+    canonical: "/dermatology/ayurveda/panchakarma/raktamokshana"
   }
 };
 

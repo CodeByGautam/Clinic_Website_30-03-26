@@ -7,7 +7,7 @@ export default function Footer() {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Our Doctors", href: "/about/doctors" },
-    { name: "Treatments", href: "/treatments" },
+    { name: "Treatments", href: "/dermatology" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "#contact" },
   ];

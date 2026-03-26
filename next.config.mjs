@@ -22,6 +22,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/treatments/:slug*',
+        destination: '/dermatology/:slug*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

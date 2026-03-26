@@ -53,37 +53,37 @@ export default function PanchakarmaPage() {
       title: "Vamana",
       description: "Therapeutic vomiting therapy to eliminate excess Kapha toxins from the upper digestive tract.",
       img: "/Gallery/vaman2.jpeg",
-      href: "/treatments/ayurveda/panchakarma/vamana"
+      href: "/dermatology/ayurveda/panchakarma/vamana"
     },
     {
       title: "Virechana",
       description: "Purgation therapy to remove Pitta toxins from the liver, gallbladder, and intestines.",
       img: "/virechana.jpg",
-      href: "/treatments/ayurveda/panchakarma/virechana"
+      href: "/dermatology/ayurveda/panchakarma/virechana"
     },
     {
       title: "Basti",
       description: "Medicated enema therapy to cleanse the colon and balance Vata dosha.",
       img: "/Gallery/BASTI.jpg",
-      href: "/treatments/ayurveda/panchakarma/basti"
+      href: "/dermatology/ayurveda/panchakarma/basti"
     },
     {
       title: "Nasya",
       description: "Nasal administration therapy to clear sinuses and treat head-neck disorders.",
       img: "/nasya.jpg",
-      href: "/treatments/ayurveda/panchakarma/nasya"
+      href: "/dermatology/ayurveda/panchakarma/nasya"
     },
     {
       title: "Raktamokshana",
       description: "Bloodletting therapy to remove impure blood and treat blood-related disorders.",
       img: "/Gallery/raktamokshan.png",
-      href: "/treatments/ayurveda/panchakarma/raktamokshana"
+      href: "/dermatology/ayurveda/panchakarma/raktamokshana"
     },
     {
       title: "Shirodhara",
       description: "Forehead oil flow therapy for mental relaxation and neurological conditions.",
       img: "/shirodhara3.jpg",
-      href: "/treatments/ayurveda/panchakarma/shirodhara"
+      href: "/dermatology/ayurveda/panchakarma/shirodhara"
     }
   ];
 
