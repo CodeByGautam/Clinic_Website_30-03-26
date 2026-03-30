@@ -2,32 +2,32 @@ export const treatments = {
   ayurveda: [
     {
       name: "Nadi Parikshan",
-      slug: "/dermatology/ayurveda/nadi-parikshan",
+      slug: "/ayurveda/nadi-parikshan",
       image: "/nadiparikshan.png"
     },
     {
       name: "Prakriti Parikshan",
-      slug: "/dermatology/ayurveda/prakriti-parikshan",
+      slug: "/ayurveda/prakriti-parikshan",
       image: "/prakriti.jpeg"
     },
     {
       name: "Agnikarma",
-      slug: "/dermatology/ayurveda/agnikarma",
+      slug: "/ayurveda/agnikarma",
       image: "/Gallery/agnikarma.jpeg"
     },
     {
       name: "Viddhakarma",
-      slug: "/dermatology/ayurveda/viddhakarma",
+      slug: "/ayurveda/viddhakarma",
       image: "/Viddhakarma2.jpg"
     },
     {
       name: "Suvarnaprashan",
-      slug: "/dermatology/ayurveda/suvarnaprashan",
+      slug: "/ayurveda/suvarnaprashan",
       image: "/suvarnaprashan1.png"
     },
     {
       name: "Panchakarma",
-      slug: "/dermatology/ayurveda/panchakarma",
+      slug: "/ayurveda/panchakarma",
       image: "/Gallery/vaman2.jpeg"
     }
   ],
@@ -60,17 +60,6 @@ export const treatments = {
         image: "/Gallery/MEDIFACIAL.jpeg"
       },
       {
-        name: "Freckles Treatment",
-        slug: "/dermatology/freckles-treatment",
-        image: "/Gallery/FILLER TREATMENT.jpeg"
-      },
-      {
-        name: "MNRF Treatment",
-        slug: "/dermatology/mnrf-treatment",
-        image:
-          "https://images.unsplash.com/photo-1580281657527-47f249e8f7fd?auto=format&fit=crop&w=2400&q=80"
-      },
-      {
         name: "Fillers",
         slug: "/dermatology/fillers",
         image: "/Gallery/FILLER TREATMENT.jpeg"
@@ -89,7 +78,7 @@ export const treatments = {
       {
         name: "Face Fat Reduction",
         slug: "/dermatology/face-fat-reduction",
-        image: "/Gallery/face laser removal .jpeg"
+        image: "/hifu.jpeg"
       },
       {
         name: "Face Toning",
@@ -97,15 +86,24 @@ export const treatments = {
         image: "/skin-clean.webp"
       },
       {
-        name: "Skin Booster",
-        slug: "/dermatology/skin-booster",
+        name: "Korean Glass Skin",
+        slug: "/dermatology/korean-glass-skin",
         image: "/skin-brightening.jpg"
       },
       {
-        name: "Skin Cleanse",
-        slug: "/dermatology/skin-cleanse",
-        image:
-          "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80"
+        name: "Botox",
+        slug: "/dermatology/botox",
+        image: "/BOTOX FILLER.jpeg"
+      },
+      {
+        name: "Face Microneedling",
+        slug: "/dermatology/face-microneedling",
+        image: "/hifu.jpeg"
+      },
+      {
+        name: "Exosomes Treatment",
+        slug: "/dermatology/exosomes-treatment",
+        image: "/hifu.jpeg"
       }
     ],
     hair: [
@@ -127,7 +125,7 @@ export const treatments = {
       {
         name: "PRP Treatment",
         slug: "/dermatology/prp-treatment",
-        image: "/Gallery/HAIRPRP2.jpg"
+        image: "/HAIRMICRONEDDLING2.jpg"
       },
       {
         name: "GFC Treatment",
@@ -143,6 +141,11 @@ export const treatments = {
         name: "QR-678 Treatment",
         slug: "/dermatology/qr-678",
         image: "/Gallery/QR-678.jpeg"
+      },
+      {
+        name: "Hair Microneedling",
+        slug: "/dermatology/hair-microneedling",
+        image: "/HAIRMICRONEDDLING3.jpeg"
       }
     ],
     laser: [

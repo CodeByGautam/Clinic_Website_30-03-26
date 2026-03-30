@@ -8,7 +8,7 @@ export const metadata = {
 export default function PRPtreatmentPage() {
   const heroImage =
     // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
-    "/Gallery/HAIRPRP2.jpg";
+    "/HAIRMICRONEDDLING2.jpg";
 
   return (
     <PremiumTreatmentPage

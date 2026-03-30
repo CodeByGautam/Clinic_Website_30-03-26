@@ -1,76 +1,119 @@
-import GalleryHero from "@/components/GalleryHero";
-import GalleryGrid from "@/components/GalleryGrid";
+"use client";
 
-export const metadata = {
-  title: "Ayurveda Consultation Sessions Gallery | Expert Consultations",
-  description: "View our Ayurvedic consultation sessions where experienced doctors conduct Nadi Parikshan, Prakriti analysis, and personalized treatment planning.",
-};
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import GalleryHero from "@/components/GalleryHero";
 
 export default function AyurvedaConsultationPage() {
-  const galleryImages = [
+  const slides = [
     {
       src: "/images/ayurveda/consultation/nadi-parikshan.jpg",
       title: "Nadi Parikshan",
-      caption: "Pulse diagnosis examination",
-      description: "Expert Ayurvedic doctor performing Nadi Parikshan (pulse diagnosis) to assess the patient's dosha balance and health condition."
+      description: "Pulse diagnosis examination"
     },
     {
       src: "/images/ayurveda/consultation/prakriti-analysis.jpg",
       title: "Prakriti Analysis",
-      caption: "Body constitution assessment",
-      description: "Detailed Prakriti Parikshan session to determine the patient's unique body constitution and个性化 treatment approach."
+      description: "Body constitution assessment"
     },
     {
       src: "/images/ayurveda/consultation/doctor-patient.jpg",
       title: "Doctor Consultation",
-      caption: "One-on-one consultation",
-      description: "Personalized consultation session where our experienced Ayurvedic doctors discuss health concerns and treatment options."
-    },
-    // {
-    //   src: "/images/ayurveda/consultation/tongue-diagnosis.jpg",
-    //   title: "Tongue Examination",
-    //   caption: "Jihva Pariksha",
-    //   description: "Traditional tongue diagnosis to assess digestive health and identify doshic imbalances in the body."
-    // },
-    // {
-    //   src: "/images/ayurveda/consultation/treatment-planning.jpg",
-    //   title: "Treatment Planning",
-    //   caption: "Personalized protocol design",
-    //   description: "Doctors creating customized treatment plans based on comprehensive diagnosis and individual health goals."
-    // },
-    // {
-    //   src: "/images/ayurveda/consultation/follow-up.jpg",
-    //   title: "Follow-up Session",
-    //   caption: "Progress monitoring",
-    //   description: "Regular follow-up consultations to monitor treatment progress and make necessary adjustments to the therapy protocol."
-    // }
+      description: "One-on-one consultation"
+    }
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <main className="min-h-screen bg-white">
       <GalleryHero
         title="Ayurveda Consultation Sessions"
-        subtitle="Expert diagnosis and personalized care"
-        description="Our consultation sessions combine ancient diagnostic techniques like Nadi Parikshan with modern understanding to provide accurate assessments and personalized treatment plans."
+        subtitle="Explore our authentic consultation process"
+        description="Our consultation sessions are designed with traditional Ayurvedic principles to create a serene and healing atmosphere. Every space is thoughtfully crafted to enhance your wellness journey."
       />
 
       {/* About Section */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-gradient-to-r from-[#00A651]/10 to-[#0077C8]/10 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-[#0B0F19] mb-4">Comprehensive Ayurvedic Diagnosis</h2>
+            <h2 className="text-2xl font-bold text-[#0B0F19] mb-4">Traditional Consultation Process</h2>
             <p className="text-gray-600 leading-relaxed">
-              Our consultation sessions are the foundation of effective Ayurvedic treatment. Using traditional 
-              diagnostic methods like Nadi Parikshan (pulse diagnosis), Jihva Pariksha (tongue examination), 
-              and Prakriti analysis, our experienced doctors gain deep insights into your health condition. 
-              This comprehensive assessment allows us to create personalized treatment plans that address 
-              the root cause of health issues rather than just symptoms.
+              Our Ayurveda consultation sessions reflect the authentic traditions of Indian healing wisdom. 
+              From the moment you step in, you are surrounded by an atmosphere of tranquility and wellness. 
+              The rooms feature traditional design elements, natural materials, and a soothing color palette 
+              that aligns with Ayurvedic principles. Each space is designed to promote healing, relaxation, 
+              and a deep connection with nature.
             </p>
           </div>
         </div>
       </section>
 
-      <GalleryGrid images={galleryImages} />
+      {/* Slider Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${slides[current].src})`,
+              }}
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === current
+                  ? "bg-white scale-125"
+                  : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Arrows */}
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ‹
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrent((current + 1) % slides.length)
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ›
+        </button>
+      </section>
     </main>
   );
 }

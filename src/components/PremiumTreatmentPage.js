@@ -19,8 +19,8 @@ export default function PremiumTreatmentPage({
   description,
   heroImage,
   heroLabel = "Trusted Dermatology Clinic",
-  heroPrimaryCta = { label: "Book Free Consultation", href: "/appointment" },
-  heroSecondaryCta = { label: "View Other Treatments", href: "/dermatology" },
+  heroPrimaryCta = null,
+  heroSecondaryCta = { label: "View Other Treatments", href: "/allopathy" },
   understanding = {
     title: "Understanding the Condition",
     description: "",
@@ -85,13 +85,15 @@ export default function PremiumTreatmentPage({
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href={heroPrimaryCta.href}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0077C8] text-white px-7 py-4 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
-                >
-                  <Calendar className="w-5 h-5" />
-                  {heroPrimaryCta.label}
-                </Link>
+                {heroPrimaryCta && (
+                  <Link
+                    href={heroPrimaryCta.href}
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0077C8] text-white px-7 py-4 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
+                  >
+                    <Calendar className="w-5 h-5" />
+                    {heroPrimaryCta.label}
+                  </Link>
+                )}
                 <Link
                   href={heroSecondaryCta.href}
                   className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/60 text-white px-7 py-4 font-semibold hover:bg-white/10 hover:border-white transition-all"
@@ -294,7 +296,7 @@ export default function PremiumTreatmentPage({
         </div>
       </section>
 
-      <section className="py-16 sm:py-20">
+      {/* <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#0B0F19]">
@@ -336,7 +338,7 @@ export default function PremiumTreatmentPage({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="bg-[#F7FAFC]">
         <TreatmentFAQ faqs={faqs} />

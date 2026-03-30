@@ -32,7 +32,7 @@ export default function Navbar() {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Blog", href: "/blog" },
-    { name: "Ask Expert", href: "#expert" },
+    { name: "Ask Expert", href: "/ask-expert" },
   ];
 
   const megaMenuData = {
@@ -46,13 +46,15 @@ export default function Navbar() {
         { name: "Organic Peels", href: "/dermatology/organic-peels" },
         { name: "Medi Facials", href: "/dermatology/medi-facials" },
         { name: "Freckles Treatment", href: "/dermatology/freckles-treatment" },
-        { name: "MNRF Treatment", href: "/dermatology/mnrf-treatment" },
         { name: "Fillers", href: "/dermatology/fillers" },
         { name: "Glow Drips", href: "/dermatology/glow-drips" },
         { name: "Face PRP", href: "/dermatology/face-prp" },
         { name: "Face Fat Reduction", href: "/dermatology/face-fat-reduction" },
-        { name: "Face Toning", href: "/dermatology/face-toning" },
-        { name: "Skin Booster", href: "/dermatology/skin-booster" },
+        { name: "Laser Toning", href: "/dermatology/laser-toning" },
+        { name: "Korean Glass Skin", href: "/dermatology/korean-glass-skin" },
+        { name: "Botox", href: "/dermatology/botox" },
+        { name: "Face Microneedling", href: "/dermatology/face-microneedling" },
+        { name: "Exosomes Treatment", href: "/dermatology/exosomes-treatment" },
       ],
     },
     hairTreatments: {
@@ -65,6 +67,7 @@ export default function Navbar() {
         { name: "GFC Treatment", href: "/dermatology/gfc-treatment" },
         { name: "Anti-Dandruff Treatment", href: "/dermatology/anti-dandruff" },
         { name: "QR-678 Treatment", href: "/dermatology/qr-678" },
+        { name: "Hair Microneedling", href: "/dermatology/hair-microneedling" },
       ],
     },
     laserTreatments: {
@@ -125,7 +128,7 @@ export default function Navbar() {
       href: "/ayurveda" 
     },
     { 
-      name: "Gallery", 
+      name: "Gallery",
       hasDropdown: true, 
       dropdownType: "gallery",
       href: "/gallery" 
@@ -271,7 +274,7 @@ export default function Navbar() {
 
                   {/* Mega Menu Dropdown */}
                   {item.dropdownType === "mega" && activeDropdown === item.name && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
+                    <div className="absolute top-full left-1/3 -translate-x-1/4 w-[800px] bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
                       <div className="grid grid-cols-4 gap-6">
                         {Object.values(megaMenuData).map((category) => (
                           <div key={category.title}>
@@ -310,7 +313,7 @@ export default function Navbar() {
 
                   {/* Ayurveda Dropdown */}
                   {item.dropdownType === "ayurveda" && activeDropdown === item.name && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[360px] bg-white rounded-xl shadow-2xl p-6 border border-gray-100">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 w-[360px] bg-white rounded-xl shadow-2xl p-6 border border-gray-100">
                       <h4 className="font-bold text-[#0B0F19] mb-4 text-lg border-b border-gray-100 pb-2">
                         Ayurveda Treatments
                       </h4>
@@ -351,7 +354,7 @@ export default function Navbar() {
 
                   {/* Gallery Mega Menu Dropdown */}
                   {item.dropdownType === "gallery" && activeDropdown === item.name && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[800px] bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
                       <div className="grid grid-cols-3 gap-6">
                         {Object.values(galleryMegaMenuData).map((category) => (
                           <div key={category.title}>
@@ -394,14 +397,14 @@ export default function Navbar() {
             {/* Right Section - Book Button */}
             <div className="hidden lg:flex items-center">
               {/* Book Appointment Button */}
-              <button
+              {/* <button
                 type="button"
                 onClick={openAppointmentModal}
                 className="flex items-center gap-2 bg-[#0077C8] text-white px-7 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <Calendar className="w-4 h-4" />
                 Book Appointment
-              </button>
+              </button> */}
             </div>
 
             {/* Mobile Menu Button */}

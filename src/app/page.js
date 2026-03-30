@@ -18,8 +18,8 @@ export default function Home() {
       <HeroSection />
       <DualTreatmentSection />
       <VideoSection
-        title="Virtour Tour"
-        subtitle="Visit Our Clinic Virtually"
+        title="Visit Our Clinic Virtually"
+        // subtitle="Visit Our Clinic Virtually"
         videos={videos}
         maxItems={4}
       />
@@ -29,7 +29,7 @@ export default function Home() {
       <WhyChooseUs />
       <TrustedPartnerSection />
       <DoctorsSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <Testimonials />
       <CTASection />
     </>

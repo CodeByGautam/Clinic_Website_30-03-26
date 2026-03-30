@@ -1,50 +1,36 @@
-import GalleryHero from "@/components/GalleryHero";
-import GalleryGrid from "@/components/GalleryGrid";
+"use client";
 
-export const metadata = {
-  title: "Ayurveda Clinic Interior Gallery | Our Facilities",
-  description: "Explore our authentic Ayurvedic clinic interior designed with traditional healing principles and serene environment for holistic wellness treatments.",
-};
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import GalleryHero from "@/components/GalleryHero";
 
 export default function AyurvedaClinicPage() {
-  const galleryImages = [
+  const slides = [
     {
       src: "/clinic/clinic55.jpeg",
       title: "Clinic Reception",
-      caption: "Welcoming reception area",
-      description: "Our warm and welcoming reception area designed to create a calming first impression for all our patients seeking Ayurvedic healing."
+      description: "Warm and welcoming space designed for comfort"
     },
     {
       src: "/clinic/clinic56.jpeg",
       title: "Waiting Area",
-      caption: "Peaceful waiting space",
-      description: "A serene waiting area with comfortable seating and soothing ambiance to help you relax before your consultation."
+      description: "Relax in a calm and peaceful environment"
     },
     {
       src: "/clinic/clinic20.jpeg",
       title: "Consultation Room",
-      caption: "Private consultation space",
-      description: "Private consultation rooms where our experienced Ayurvedic doctors conduct detailed assessments and personalized treatment planning."
-    },
-    // {
-    //   src: "/images/ayurveda/clinic/herbal-storage.jpg",
-    //   title: "Herbal Medicine Storage",
-    //   caption: "Authentic Ayurvedic herbs",
-    //   description: "Our well-organized herbal medicine storage featuring authentic Ayurvedic herbs and formulations sourced from trusted suppliers."
-    // },
-    // {
-    //   src: "/images/ayurveda/clinic/yoga-space.jpg",
-    //   title: "Yoga & Meditation Space",
-    //   caption: "Mind-body wellness area",
-    //   description: "Dedicated space for yoga and meditation sessions to complement your Ayurvedic treatment journey."
-    // },
-    // {
-    //   src: "/images/ayurveda/clinic/garden.jpg",
-    //   title: "Healing Garden",
-    //   caption: "Natural healing environment",
-    //   description: "Our healing garden with medicinal plants creates a natural environment that enhances the therapeutic experience."
-    // }
+      description: "Private and professional care"
+    }
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <main className="min-h-screen bg-white">
@@ -70,7 +56,64 @@ export default function AyurvedaClinicPage() {
         </div>
       </section>
 
-      <GalleryGrid images={galleryImages} />
+      {/* Slider Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${slides[current].src})`,
+              }}
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === current
+                  ? "bg-white scale-125"
+                  : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Arrows */}
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ‹
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrent((current + 1) % slides.length)
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ›
+        </button>
+      </section>
     </main>
   );
 }

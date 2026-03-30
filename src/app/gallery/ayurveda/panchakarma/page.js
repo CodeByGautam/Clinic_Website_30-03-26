@@ -1,76 +1,129 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import GalleryHero from "@/components/GalleryHero";
-import GalleryGrid from "@/components/GalleryGrid";
 
-export const metadata = {
-  title: "Panchakarma Therapy Sessions Gallery | Authentic Treatments",
-  description: "View our Panchakarma therapy sessions including Vamana, Virechana, Basti, Nasya, and Raktamokshana treatments performed by expert Ayurvedic practitioners.",
-};
-
-export default function PanchakarmaGalleryPage() {
-  const galleryImages = [
+export default function AyurvedaPanchakarmaPage() {
+  const slides = [
     {
-      src: "/vamana.jpg",
-      title: "Vamana Therapy Session",
-      caption: "Therapeutic emesis treatment",
-      description: "Expert practitioner performing Vamana therapy to eliminate excess Kapha dosha and toxins from the upper digestive tract."
+      src: "/Gallery/VAMANA.jpg",
+      title: "Vamana Therapy",
+      description: "Therapeutic emesis treatment"
     },
     {
-      src: "/virechana.jpg",
-      title: "Virechana Therapy Session",
-      caption: "Purgation therapy",
-      description: "Controlled purgation therapy session designed to remove Pitta toxins from the liver, gallbladder, and intestines."
+      src: "/Gallery/VIRECHANA.jpg",
+      title: "Virechana Therapy",
+      description: "Purgation therapy session"
     },
     {
       src: "/Gallery/BASTI.jpg",
       title: "Basti Therapy Session",
-      caption: "Medicated enema treatment",
-      description: "Traditional Basti therapy administration for Vata balance and deep colon cleansing using herbal oils and decoctions."
+      description: "Medicated enema treatment"
     },
     {
       src: "/nasya.jpg",
       title: "Nasya Therapy Session",
-      caption: "Nasal administration therapy",
-      description: "Nasya treatment session for head-neck disorders, involving the administration of medicated oils through the nasal passage."
+      description: "Nasal administration therapy"
     },
     {
-      src: "/raktamokshan.jpeg",
-      title: "Raktamokshana Session",
-      caption: "Bloodletting therapy",
-      description: "Traditional bloodletting therapy session for removing vitiated blood and treating chronic skin and blood disorders."
-    },
-    {
-      src: "/images/ayurveda/panchakarma/preparation.jpg",
-      title: "Poorvakarma Preparation",
-      caption: "Pre-therapy preparation",
-      description: "Patient undergoing Snehana (oleation) and Swedana (sudation) preparation before main Panchakarma therapy."
+      src: "/Gallery/RAKTAMOKSHANA.jpg",
+      title: "Raktamokshana Therapy",
+      description: "Blood purification treatment"
     }
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <main className="min-h-screen bg-white">
       <GalleryHero
-        title="Panchakarma Therapy Sessions"
-        subtitle="Authentic detoxification therapies in action"
-        description="Witness the transformative power of authentic Panchakarma treatments performed by our experienced Ayurvedic doctors in a traditional healing environment."
+        title="Ayurveda Panchakarma Treatments"
+        subtitle="Explore our authentic detox therapies"
+        description="Our Panchakarma treatments are designed with traditional Ayurvedic principles to create a serene and healing atmosphere. Every space is thoughtfully crafted to enhance your wellness journey."
       />
 
       {/* About Section */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-gradient-to-r from-[#00A651]/10 to-[#0077C8]/10 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-[#0B0F19] mb-4">The Fivefold Detoxification Process</h2>
+            <h2 className="text-2xl font-bold text-[#0B0F19] mb-4">Traditional Detox Therapies</h2>
             <p className="text-gray-600 leading-relaxed">
-              Panchakarma, meaning five actions, is the cornerstone of Ayurvedic healing. Our gallery 
-              showcases authentic Panchakarma sessions including Vamana (therapeutic vomiting), Virechana 
-              (purgation), Basti (enema), Nasya (nasal therapy), and Raktamokshana (bloodletting). Each 
-              therapy is performed following classical Ayurvedic protocols under strict medical supervision 
-              to ensure safety and effectiveness.
+              Our Ayurveda Panchakarma treatments reflect the authentic traditions of Indian healing wisdom. 
+              From the moment you step in, you are surrounded by an atmosphere of tranquility and wellness. 
+              The rooms feature traditional design elements, natural materials, and a soothing color palette 
+              that aligns with Ayurvedic principles. Each space is designed to promote healing, relaxation, 
+              and a deep connection with nature.
             </p>
           </div>
         </div>
       </section>
 
-      <GalleryGrid images={galleryImages} />
+      {/* Slider Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${slides[current].src})`,
+              }}
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === current
+                  ? "bg-white scale-125"
+                  : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Arrows */}
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ‹
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrent((current + 1) % slides.length)
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ›
+        </button>
+      </section>
     </main>
   );
 }
