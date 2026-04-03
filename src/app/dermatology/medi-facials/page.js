@@ -8,7 +8,7 @@ export const metadata = {
 export default function MediFacialsPage() {
   const heroImage =
     // "https://images.unsplash.com/photo-1612810436541-336ad4dc9a96?auto=format&fit=crop&w=2400&q=80";
-    "/Gallery/MEDIFACIAL.jpeg";
+    "/MEDIFACIAL-3.webp";
 
   return (
     <PremiumTreatmentPage

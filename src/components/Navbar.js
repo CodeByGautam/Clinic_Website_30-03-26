@@ -115,6 +115,11 @@ export default function Navbar() {
   };
 
   const mainMenuItems = [
+    {
+      name: "Fusion Treatments",
+      hasDropdown: false,
+      href: "/fusion-treatments",
+    },
     { 
       name: "Dermatology", 
       hasDropdown: true, 
@@ -166,7 +171,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Left - placeholder for alignment */}
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-500 hidden sm:inline">Kharadi, Pune</span>
+              {/* <span className="text-sm text-gray-500 hidden sm:inline">Kharadi, Pune</span> */}
             </div>
 
             {/* Center - Quick Links */}
@@ -236,11 +241,7 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-md"
-            : "bg-transparent"
-        }`}
+        className={`sticky top-0 z-50 transition-all duration-300 bg-white shadow-md`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">

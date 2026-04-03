@@ -57,7 +57,7 @@ export const treatments = {
       {
         name: "Medi Facials",
         slug: "/dermatology/medi-facials",
-        image: "/Gallery/MEDIFACIAL.jpeg"
+        image: "/MEDIFACIAL-3.webp"
       },
       {
         name: "Fillers",
@@ -66,9 +66,10 @@ export const treatments = {
       },
       {
         name: "Glow Drips",
-        slug: "/dermatology/glow-drips",
+        slug: "/GLUTINE IV",
         image:
-          "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80"
+          // 
+          "/GLUTAINE IV DRIPS2.jpeg"
       },
       {
         name: "Face PRP",
@@ -98,12 +99,12 @@ export const treatments = {
       {
         name: "Face Microneedling",
         slug: "/dermatology/face-microneedling",
-        image: "/hifu.jpeg"
+        image: "/microneedling.jpg"
       },
       {
         name: "Exosomes Treatment",
         slug: "/dermatology/exosomes-treatment",
-        image: "/hifu.jpeg"
+        image: "/face exosome.webp"
       }
     ],
     hair: [
@@ -140,12 +141,12 @@ export const treatments = {
       {
         name: "QR-678 Treatment",
         slug: "/dermatology/qr-678",
-        image: "/Gallery/QR-678.jpeg"
+        image: "/q 678.jpg"
       },
       {
         name: "Hair Microneedling",
         slug: "/dermatology/hair-microneedling",
-        image: "/HAIRMICRONEDDLING3.jpeg"
+        image: "/Hair microneedling.jpg"
       }
     ],
     laser: [

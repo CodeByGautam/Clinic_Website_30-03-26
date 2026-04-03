@@ -1,50 +1,50 @@
 export const doctors = [
   {
-    name: "Dr. Ajay Kumar",
+    slug: "ajay-devershi",
+    name: " Ajay Devershi",
     image: "/dr.Ajay.webp",
-    qualification: "MD Dermatology",
+    qualification: "MBBS, DNB (General Surgery) - General Surgeon, Laparoscopic Surgeon",
     experience: "15+ Years",
-    specialization: "Skin Specialist",
-    bio: "Expert in advanced dermatology and cosmetic treatments"
+    // specialization: "General & Laparoscopic Surgery",
   },
   {
-    name: "Dr. Shruti Sharma",
+    slug: "shruti-jadhav-devershi",
+    name: " Shruti Devershi",
     image: "/shruti.jpeg",
-    qualification: "MD Dermatology",
-    experience: "12+ Years",
-    specialization: "Hair Specialist",
-    bio: "Specialized in hair restoration and scalp treatments"
+    qualification: "MBBS, DDVL — Specializes in Dermatology, Costmetology, Trichology",
+    experience: "10+ Years",
+    // specialization: "Dermatology, Cosmetology & Trichology",
   },
   {
-    name: "Dr. Ramesh Gupta",
-    image: "/rushi.jpg",
-    qualification: "BAMS, MD Ayurveda",
-    experience: "20+ Years",
-    specialization: "Ayurveda Specialist",
-    bio: "Traditional Ayurveda expert with modern medical approach"
-  },
-  {
-    name: "Dr. Priya Patel",
+    slug: "shubhi-rao",
+    name: " Shubhi Rao",
     image: "/shubhi.jpg",
-    qualification: "MD Dermatology",
-    experience: "8+ Years",
-    specialization: "Laser Specialist",
-    bio: "Advanced laser treatments and cosmetic procedures"
+    qualification: "BBAMS, M.D. — Specialized in Ayurveda",
+    experience: "5+ Years",
+    // specialization: "Ayurveda Specialist",
   },
+  // {
+  //   name: "Dr. Priya Patel",
+  //   image: "/shubhi.jpg",
+  //   qualification: "MD Dermatology",
+  //   experience: "8+ Years",
+  //   specialization: "Laser Specialist",
+  //   bio: "Advanced laser treatments and cosmetic procedures"
+  // },
   {
-    name: "Dr. Amit Singh",
+    slug: "aishwarya",
+    name: " Aishwarya",
     image: "/aishwarya.jpeg",
     qualification: "BAMS, MD Ayurveda",
     experience: "10+ Years",
-    specialization: "Panchakarma Expert",
-    bio: "Expert in traditional Panchakarma therapies"
+    // specialization: "Skin & Hair Specialist",
   },
-  {
-    name: "Dr. Neha Verma",
-    image: "/women1.jpg",
-    qualification: "MD Dermatology",
-    experience: "6+ Years",
-    specialization: "Cosmetic Dermatology",
-    bio: "Specialized in aesthetic and cosmetic treatments"
-  }
+  // {
+  //   name: "Dr. Neha Verma",
+  //   image: "/women1.jpg",
+  //   qualification: "MD Dermatology",
+  //   experience: "6+ Years",
+  //   specialization: "Cosmetic Dermatology",
+  //   bio: "Specialized in aesthetic and cosmetic treatments"
+  // }
 ];

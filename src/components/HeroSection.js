@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/Gallery/home4.png"
+          src="/home8.jpeg"
           alt="Advanced Skin and Hair Treatment Clinic"
           fill
           priority
@@ -17,7 +17,7 @@ export default function HeroSection() {
           sizes="100vw"
         />
         {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" /> */}
       </div>
 
       {/* Content */}
@@ -25,7 +25,7 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-0">
           <div className="max-w-2xl">
             {/* Label */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 mt-4">
               <span className="w-2 h-2 bg-[#00A651] rounded-full"></span>
               <span className="text-white/90 text-sm font-medium tracking-wide">
                 Trusted Dermatology Clinic
@@ -33,37 +33,37 @@ export default function HeroSection() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+            {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Advanced{" "}
               <span className="text-[#00A651]">Skin</span>
               {" "}&{" "}
               <span className="text-[#0077C8]">Hair</span>
               {" "}Treatments
-            </h1>
+            </h1> */}
 
             {/* Subtext */}
-            <p className="text-lg text-white/80 mb-8 max-w-lg leading-relaxed">
+            {/* <p className="text-lg text-white/80 mb-8 max-w-lg leading-relaxed">
               Experience safe and effective dermatology treatments with advanced 
               technology and expert doctors. Your journey to healthy skin starts here.
-            </p>
+            </p> */}
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               {/* Primary Button */}
-              <Link
+              {/* <Link
                 href="/appointment"
                 className="inline-flex items-center justify-center bg-[#0077C8] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-blue-700 transition-all duration-300 hover:-translate-y-0.5"
               >
                 Book Appointment
-              </Link>
+              </Link> */}
 
               {/* Secondary Button */}
-              <Link
+              {/* <Link
                 href="/appointment"
                 className="inline-flex items-center justify-center bg-transparent text-white border-2 border-white/50 px-8 py-4 rounded-full font-semibold text-base hover:bg-white/10 hover:border-white transition-all duration-300"
               >
                 Book Free Consultation
-              </Link>
+              </Link> */}
             </div>
 
             {/* Trust Indicators - Removed */}

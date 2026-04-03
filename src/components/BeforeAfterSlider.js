@@ -11,22 +11,22 @@ export default function BeforeAfterSlider() {
       treatment: "Acne Treatment",
       age: "24 years",
       duration: "3 months",
-      before: "/RheumatoidArthritis.jpg",
-      after: "/Ringworm.jpg",
+      before: "/acneafter.jpeg",
+      after: "/acnebefore.jpeg",
     },
     {
       treatment: "Pigmentation Removal",
       age: "32 years",
       duration: "2 months",
-      before: "/Ringworm.jpg",
-      after: "/RheumatoidArthritis.jpg",
+      before: "/pigmantationafter.jpeg",
+      after: "/pigmantationbefore.jpeg",
     },
     {
       treatment: "Hair Transplant",
       age: "28 years",
       duration: "6 months",
-      before: "/RheumatoidArthritis.jpg",
-      after: "/Ringworm.jpg",
+      before: "/hairtransafter.jpeg",
+      after: "/hairtransbefore2.jpeg",
     },
   ];
 
@@ -57,16 +57,14 @@ export default function BeforeAfterSlider() {
               </div>
               
               {/* Before Image (Left side) */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 transition-opacity duration-500">
-                <div className="text-center">
-                  <Image
-                    src={results[activeIndex].before}
-                    alt={`Before - ${results[activeIndex].treatment}`}
-                    width={512}
-                    height={512}
-                    className="object-cover w-full h-full rounded-full mb-4"
-                  />
-                </div>
+              <div className="absolute inset-0 bg-gray-200 transition-opacity duration-500">
+                <Image
+                  src={results[activeIndex].before}
+                  alt={`Before - ${results[activeIndex].treatment}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               
               {/* After Label - Right side */}
@@ -76,18 +74,16 @@ export default function BeforeAfterSlider() {
               
               {/* After Image (Right side with clip) */}
               <div 
-                className="absolute inset-0 flex items-center justify-center bg-[#0077C8]/10 transition-opacity duration-500"
+                className="absolute inset-0 bg-[#0077C8]/10 transition-opacity duration-500"
                 style={{ clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
               >
-                <div className="text-center">
-                  <Image
-                    src={results[activeIndex].after}
-                    alt={`After - ${results[activeIndex].treatment}`}
-                    width={512}
-                    height={512}
-                    className="object-cover w-full h-full rounded-full mb-4"
-                  />
-                </div>
+                <Image
+                  src={results[activeIndex].after}
+                  alt={`After - ${results[activeIndex].treatment}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
 
               {/* Slider Line */}

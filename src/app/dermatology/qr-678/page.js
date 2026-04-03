@@ -8,7 +8,7 @@ export const metadata = {
 export default function QR678Page() {
   const heroImage =
     // "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=2400&q=80";
-    "/Gallery/QR-678.jpeg";
+    "/q 678.jpg";
 
   return (
     <PremiumTreatmentPage

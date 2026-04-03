@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DoctorCard({ doctor }) {
   return (
     <div className="bg-white rounded-2xl shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 overflow-hidden">
       {/* Doctor Image */}
-      <div className="relative h-64 w-full">
+      <Link href={`/doctors/${doctor.slug}`} className="block relative h-64 w-full">
         <Image
           src={doctor.image}
           alt={`Dr. ${doctor.name}`}
@@ -12,13 +13,15 @@ export default function DoctorCard({ doctor }) {
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>
+      </Link>
 
       {/* Doctor Info */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-1">
-          Dr. {doctor.name}
-        </h3>
+        <Link href={`/doctors/${doctor.slug}`} className="block">
+          <h3 className="text-xl font-bold text-gray-900 mb-1">
+            Dr. {doctor.name}
+          </h3>
+        </Link>
         
         <div className="space-y-2 mb-4">
           <p className="text-blue-600 font-semibold text-sm">

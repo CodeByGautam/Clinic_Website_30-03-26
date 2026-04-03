@@ -30,10 +30,10 @@ export default function ConsultationBanner({
                   <ShieldCheck className="w-4 h-4" />
                   15+ Years Experience
                 </span>
-                <span className="inline-flex items-center gap-2">
+                {/* <span className="inline-flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4" />
                   10+ Clinics
-                </span>
+                </span> */}
               </div>
             </div>
 

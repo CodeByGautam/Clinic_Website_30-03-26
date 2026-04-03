@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function FaceMicroneedlingPage() {
-  const heroImage = "/hifu.jpeg";
+  const heroImage = "/microneedling.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -17,7 +17,7 @@ export default function FaceMicroneedlingPage() {
         title: "Understanding Face Microneedling",
         description:
           "Microneedling is a minimally invasive treatment that uses fine needles to create controlled micro-injuries in the skin. This process stimulates the body's natural wound healing response, triggering collagen and elastin production.\n\nThe treatment effectively addresses various skin concerns including acne scars, fine lines, large pores, and uneven skin texture. As the skin heals, it becomes smoother, firmer, and more youthful-looking.",
-        image: "/hifu.jpeg",
+        image: "/microneedling.jpg",
       }}
       causesTitle="Common Concerns Addressed"
       causes={[

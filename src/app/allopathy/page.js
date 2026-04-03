@@ -41,9 +41,9 @@ export default function AllopathyPage() {
               <span className="rounded-full bg-white/10 border border-white/15 px-4 py-2 backdrop-blur-sm">
                 15+ Years Experience
               </span>
-              <span className="rounded-full bg-white/10 border border-white/15 px-4 py-2 backdrop-blur-sm">
+              {/* <span className="rounded-full bg-white/10 border border-white/15 px-4 py-2 backdrop-blur-sm">
                 10+ Clinics
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function ExosomesTreatmentPage() {
-  const heroImage = "/hifu.jpeg";
+  const heroImage = "/face exosome.webp";
 
   return (
     <PremiumTreatmentPage
@@ -17,7 +17,7 @@ export default function ExosomesTreatmentPage() {
         title: "Understanding Exosomes Treatment",
         description:
           "Exosomes are microscopic vesicles that contain growth factors, proteins, and genetic material essential for cell communication and regeneration. When applied to the skin, they deliver powerful signals that stimulate natural healing and rejuvenation processes.\n\nThis cutting-edge therapy represents the frontier of regenerative medicine, offering superior results compared to traditional treatments by working at the cellular level to repair and renew skin tissue from within.",
-        image: "/hifu.jpeg",
+        image: "/face exosome.webp",
       }}
       causesTitle="Conditions Treated"
       causes={[

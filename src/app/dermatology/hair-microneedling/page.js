@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function HairMicroneedlingPage() {
-  const heroImage = "/HAIRMICRONEDDLING3.jpeg";
+  const heroImage = "/hair microneedling.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -17,7 +17,7 @@ export default function HairMicroneedlingPage() {
         title: "Understanding Hair Microneedling",
         description:
           "Hair microneedling is a specialized treatment that uses fine needles to create controlled micro-injuries on the scalp. This process stimulates the body's natural healing response, increasing blood flow to hair follicles and activating dormant follicles.\n\nThe treatment creates pathways for growth factors and nutrients to penetrate deeper into the scalp, while also stimulating collagen production and stem cell activation. This comprehensive approach addresses multiple factors contributing to hair loss and thinning.",
-        image: "/HAIRMICRONEDDLING3.jpeg",
+        image: "/hair microneedling.jpg",
       }}
       causesTitle="Hair Concerns Treated"
       causes={[

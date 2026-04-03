@@ -10,9 +10,9 @@ export default function TrustSection() {
     },
     {
       icon: FaHospital,
-      number: "10+",
-      label: "Clinics",
-      description: "Multiple locations across Pune"
+      number: "100%",
+      label: "Best Clinic",
+      description: "Near your locations at Pune"
     },
     {
       icon: FaSmile,

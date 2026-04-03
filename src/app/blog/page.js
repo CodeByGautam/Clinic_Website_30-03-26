@@ -33,12 +33,12 @@ export default function BlogPage() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Link
+              {/* <Link
                 href="/appointment"
                 className="inline-flex items-center justify-center rounded-full bg-[#0077C8] text-white px-7 py-4 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
               >
                 Book Appointment
-              </Link>
+              </Link> */}
               <Link
                 href="/dermatology"
                 className="inline-flex items-center justify-center rounded-full border-2 border-white/60 text-white px-7 py-4 font-semibold hover:bg-white/10 hover:border-white transition-all"
@@ -46,7 +46,7 @@ export default function BlogPage() {
                 Explore Treatments
               </Link>
             </div>
-          </div>
+                      </div>
         </div>
       </section>
 
@@ -58,7 +58,7 @@ export default function BlogPage() {
       />
 
       {/* Blog Articles */}
-      <section className="py-14 sm:py-16 bg-[#F7FAFC]">
+      {/* <section className="py-14 sm:py-16 bg-[#F7FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B0F19]">
@@ -108,7 +108,7 @@ export default function BlogPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Conversion CTA Banner */}
       <section className="py-14 sm:py-16 bg-white">
@@ -148,13 +148,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Optional Sticky CTA */}
-      <Link
-        href="/appointment"
-        className="fixed bottom-5 right-5 z-50 inline-flex items-center justify-center rounded-full bg-[#0077C8] text-white px-5 py-3 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
-      >
-        Book Appointment
-      </Link>
-    </div>
+          </div>
   );
 }

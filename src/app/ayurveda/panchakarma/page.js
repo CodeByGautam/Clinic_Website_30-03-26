@@ -50,10 +50,10 @@ export default function PanchakarmaPage() {
 
   const therapies = [
     {
-      title: "Vamana",
-      description: "Therapeutic vomiting therapy to eliminate excess Kapha toxins from the upper digestive tract.",
-      img: "/Gallery/vaman2.jpeg",
-      href: "/ayurveda/panchakarma/vamana"
+      title: "Shirodhara",
+      description: "Forehead oil flow therapy for mental relaxation and neurological conditions.",
+      img: "/shirodhara3.jpg",
+      href: "/ayurveda/panchakarma/shirodhara"
     },
     {
       title: "Virechana",
@@ -98,10 +98,10 @@ export default function PanchakarmaPage() {
       href: "/ayurveda/panchakarma/janu-basti"
     },
     {
-      title: "Shirodhara",
-      description: "Forehead oil flow therapy for mental relaxation and neurological conditions.",
-      img: "/shirodhara3.jpg",
-      href: "/ayurveda/panchakarma/shirodhara"
+      title: "Vamana",
+      description: "Therapeutic vomiting therapy to eliminate excess Kapha toxins from the upper digestive tract.",
+      img: "/Gallery/vaman2.jpeg",
+      href: "/ayurveda/panchakarma/vamana"
     }
     
   ];

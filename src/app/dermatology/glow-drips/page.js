@@ -6,9 +6,7 @@ export const metadata = {
 };
 
 export default function GlowDripsPage() {
-  const heroImage =
-    "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80";
-
+  const heroImage = "/GLUTAINE IV DRIPS.jpeg";
   return (
     <PremiumTreatmentPage
       title="Glow Drips IV Therapy"
@@ -19,7 +17,8 @@ export default function GlowDripsPage() {
         description:
           "Glow drips are intravenous nutrient infusions that deliver vitamins and antioxidants directly into the bloodstream. This may support faster absorption compared to oral supplements.\n\nAt Healthfusion, IV therapies are planned after assessment and are administered with safety-first protocols. The goal is wellness support—hydration, antioxidant balance, and overall skin vitality.",
         image:
-          "https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=2400&q=80",
+          // 
+          "/GLUTAINE IV DRIPS.jpeg"
       }}
       causesTitle="Common Goals"
       causes={[
