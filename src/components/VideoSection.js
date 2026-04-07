@@ -29,7 +29,7 @@ export default function VideoSection({
           ) : null}
         </div>
 
-        <div className="mt-10 flex flex-col gap-10 max-w-3xl mx-auto">
+        <div className="mt-10 flex flex-col gap-10 max-w-6xl mx-auto">
           {items.map((video, index) => (
             <VideoCard key={`${video.title}-${video.url}-${index}`} video={video} />
           ))}
@@ -96,7 +96,7 @@ function VideoCard({ video }) {
         isVisible ? "opacity-100 scale-100" : "opacity-80 scale-[0.98]"
       }`}
     >
-      <div className="relative aspect-video w-full">
+      <div className="relative aspect-video w-full lg:h-[500px]">
         {isYouTube ? (
           <iframe
             className="w-full h-full"
@@ -113,7 +113,7 @@ function VideoCard({ video }) {
             loop
             playsInline
             preload="metadata"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover lg:h-[500px]"
           />
         )}
 

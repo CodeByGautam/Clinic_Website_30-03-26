@@ -1,23 +1,64 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    {
+      image: "/home18.png",
+      alt: "Advanced Skin and Hair Treatment Clinic 1"
+    },
+    {
+      image: "/home19.png",
+      alt: "Advanced Skin and Hair Treatment Clinic 2"
+    },
+    {
+      image: "/home20.png",
+      alt: "Advanced Skin and Hair Treatment Clinic 3"
+    },
+    {
+      image: "/home17.png",
+      alt: "Advanced Skin and Hair Treatment Clinic 4"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 3000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <section className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] w-full overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image Slider */}
       <div className="absolute inset-0">
-        <Image
-          src="/home8.jpeg"
-          alt="Advanced Skin and Hair Treatment Clinic"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        {/* Dark Gradient Overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" /> */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
+        ))}
       </div>
 
       {/* Content */}
@@ -66,7 +107,21 @@ export default function HeroSection() {
               </Link> */}
             </div>
 
-            {/* Trust Indicators - Removed */}
+            {/* Slider Dots */}
+            <div className="flex gap-2 mt-8">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide 
+                      ? 'bg-white w-8' 
+                      : 'bg-white/50 hover:bg-white/70'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

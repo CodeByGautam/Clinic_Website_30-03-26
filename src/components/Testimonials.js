@@ -6,27 +6,27 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "Priya Malhotra",
-      city: "Mumbai",
+      city: "Pune",
       rating: 5,
       review: "I had severe acne for years and tried everything. The doctors at Healthfusion created a personalized treatment plan that finally worked. My skin is now clear and glowing. Highly recommend!",
       treatment: "Acne Treatment",
     },
     {
       name: "Rahul Verma",
-      city: "Delhi",
+      city: "Nashik",
       rating: 5,
       review: "Got my hair transplant done here and the results are amazing. The procedure was painless and the staff was very supportive throughout. Best decision I ever made for my confidence!",
       treatment: "Hair Transplant",
     },
     {
       name: "Sneha Patel",
-      city: "Bangalore",
+      city: "Satara",
       rating: 5,
       review: "The laser hair removal treatment was quick and effective. After just a few sessions, I noticed significant reduction. The clinic uses top-notch technology and maintains high hygiene standards.",
       treatment: "Laser Hair Removal",
     },
     {
-      name: "Amit Shah",
+      name: "Amit Patil",
       city: "Pune",
       rating: 5,
       review: "Professional service and excellent results for my pigmentation issues. Dr. Sharma explained everything clearly and the treatment plan was very effective. Thank you Healthfusion!",
@@ -34,7 +34,7 @@ export default function Testimonials() {
     },
     {
       name: "Neha Gupta",
-      city: "Hyderabad",
+      city: "Nagpur",
       rating: 5,
       review: "I've been coming here for my skin treatments for over 2 years now. The doctors are very experienced and the results have been consistently great. Wouldn't go anywhere else!",
       treatment: "Skin Rejuvenation",

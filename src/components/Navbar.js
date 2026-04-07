@@ -248,7 +248,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <img 
-                src="/logo1.png" 
+                src="/logo6.jpeg" 
                 alt="Clinic Logo" 
                 className="h-16 w-auto object-contain"
               />

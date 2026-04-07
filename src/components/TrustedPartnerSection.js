@@ -8,7 +8,7 @@ export default function TrustedPartnerSection() {
 
   const partnerFeatures = [
     {
-      title: "Expert Dermatologists",
+      title: "Expert Ayurveda Treatments",
       description: "Board-certified specialists with years of experience in advanced skin and hair treatments.",
       bgImage: "/vamana.jpg"
     },

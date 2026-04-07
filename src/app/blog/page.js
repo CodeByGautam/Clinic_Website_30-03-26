@@ -15,6 +15,18 @@ export default function BlogPage() {
     <div className="bg-white">
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0B0F19]">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/Blog/staff2.jpg"
+            alt="Blog Background"
+            fill
+            className="object-contain sm:object-cover"
+            sizes="100vw"
+          />
+          {/* <div className="absolute inset-0 bg-[#0B0F19]/30"></div> */}
+        </div>
+        
         <div className="absolute inset-0 opacity-25">
           <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-[#0077C8] blur-3xl" />
           <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#00A651] blur-3xl" />
@@ -22,15 +34,12 @@ export default function BlogPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="max-w-3xl">
-            <p className="inline-flex items-center rounded-full bg-white/10 border border-white/15 px-4 py-2 text-white/80 text-sm font-semibold">
+            {/* <p className="inline-flex items-center rounded-full bg-white/10 border border-white/15 px-4 py-2 text-white/80 text-sm font-semibold">
               Healthfusion Knowledge Hub
-            </p>
-            <h1 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            </p> */}
+            <h1 className="mt-28 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               Our Blogs & Videos
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-white/75 leading-relaxed">
-              Expert insights, treatments, and real results
-            </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               {/* <Link
@@ -39,12 +48,12 @@ export default function BlogPage() {
               >
                 Book Appointment
               </Link> */}
-              <Link
+              {/* <Link
                 href="/dermatology"
                 className="inline-flex items-center justify-center rounded-full border-2 border-white/60 text-white px-7 py-4 font-semibold hover:bg-white/10 hover:border-white transition-all"
               >
                 Explore Treatments
-              </Link>
+              </Link> */}
             </div>
                       </div>
         </div>

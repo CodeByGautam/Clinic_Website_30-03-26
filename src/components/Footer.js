@@ -57,7 +57,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="bg-white p-2 rounded-lg">
                 <img 
-                  src="/logo1.png" 
+                  src="/logo6.jpeg" 
                   alt="Clinic Logo" 
                   className="h-16 w-42 object-contain"
                 />

@@ -2,9 +2,9 @@ export const doctors = [
   {
     slug: "ajay-devershi",
     name: " Ajay Devershi",
-    image: "/dr.Ajay.webp",
+    image: "/ajay2.jpeg",
     qualification: "MBBS, DNB (General Surgery) - General Surgeon, Laparoscopic Surgeon",
-    experience: "15+ Years",
+    experience: "12+ Years",
     // specialization: "General & Laparoscopic Surgery",
   },
   {
@@ -19,7 +19,7 @@ export const doctors = [
     slug: "shubhi-rao",
     name: " Shubhi Rao",
     image: "/shubhi.jpg",
-    qualification: "BBAMS, M.D. — Specialized in Ayurveda",
+    qualification: "BAMS, M.D. — Specialized in Ayurveda",
     experience: "5+ Years",
     // specialization: "Ayurveda Specialist",
   },
@@ -33,10 +33,10 @@ export const doctors = [
   // },
   {
     slug: "aishwarya",
-    name: " Aishwarya",
+    name: " Aishwarya Mahale",
     image: "/aishwarya.jpeg",
-    qualification: "BAMS, MD Ayurveda",
-    experience: "10+ Years",
+    qualification: "Senior Cosmetologist",
+    experience: "5+ Years",
     // specialization: "Skin & Hair Specialist",
   },
   // {

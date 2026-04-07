@@ -226,46 +226,46 @@ export default function FusionTreatmentsPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/Gallery/home4.png"
+            src="/fusiionmain2.jpeg"
             alt="Fusion Treatments"
             fill
             className="object-cover"
             sizes="100vw"
             priority={false}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-white/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/15 to-white/30" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-16 sm:py-20">
+        <div className="relative mx-auto max-w-7xl px-6 py-36 sm:py-44">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/15">
+            {/* <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/15">
               <BadgeCheck className="h-4 w-4" />
               Fusion Treatments
-            </span>
+            </span> */}
 
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            {/* <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Advanced Fusion Treatments for Faster & Lasting Results
-            </h1>
-            <p className="mt-4 text-lg font-semibold text-white/90">
+            </h1> */}
+            {/* <p className="mt-4 text-lg font-semibold text-white/90">
               Combining Ayurveda + Dermatology + Allopathy for complete healing
-            </p>
+            </p> */}
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
+              {/* <Link
                 href="/appointment"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#0B0F19] shadow-lg shadow-black/10 transition-all duration-300 hover:shadow-xl"
               >
                 Book Appointment
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="/ask-expert"
                 className="inline-flex items-center justify-center rounded-full border border-white/40 bg-transparent px-7 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:bg-white/10"
               >
                 Book Consultation
-              </Link>
+              </Link> */}
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-16 flex flex-wrap gap-4">
               <TrustBadge icon={Shield} label="15+ Years Experience" />
               <TrustBadge icon={Users} label="10,000+ Happy Patients" />
             </div>
@@ -402,17 +402,28 @@ export default function FusionTreatmentsPage() {
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {[1, 2].map((i) => (
+            {[
+              {
+                before: "/hairtransbefore2.jpeg",
+                after: "/hairtransafter.jpeg",
+                treatment: "Hair Transplant"
+              },
+              {
+                before: "/acnebefore.jpeg", 
+                after: "/acneafter.jpeg",
+                treatment: "Acne Treatment"
+              }
+            ].map((transformation, index) => (
               <div
-                key={i}
+                key={index}
                 className="rounded-3xl border border-gray-100 bg-white p-6 shadow-md"
               >
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="overflow-hidden rounded-2xl border border-gray-100">
                     <div className="relative aspect-[4/3]">
                       <Image
-                        src={`https://placehold.co/900x700/png?text=Before+${i}`}
-                        alt={`Before ${i}`}
+                        src={transformation.before}
+                        alt={`Before ${transformation.treatment}`}
                         fill
                         className="object-cover"
                         sizes="(min-width: 1024px) 320px, 90vw"
@@ -425,8 +436,8 @@ export default function FusionTreatmentsPage() {
                   <div className="overflow-hidden rounded-2xl border border-gray-100">
                     <div className="relative aspect-[4/3]">
                       <Image
-                        src={`https://placehold.co/900x700/png?text=After+${i}`}
-                        alt={`After ${i}`}
+                        src={transformation.after}
+                        alt={`After ${transformation.treatment}`}
                         fill
                         className="object-cover"
                         sizes="(min-width: 1024px) 320px, 90vw"

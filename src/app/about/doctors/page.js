@@ -11,7 +11,7 @@ export default function OurDoctorsPage() {
       name: "Dr. Ajay Devershi",
       qualification: "MBBS, DNB (General Surgery) - General Surgeon, Laparoscopic Surgeon",
       // specialization: "General Surgeon & Laparoscopic Surgeon",
-      image: "/ajay.jpeg",
+      image: "/ajay2.jpeg",
       color: "#00A651"
     },
     {

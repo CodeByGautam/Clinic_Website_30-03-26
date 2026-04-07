@@ -15,7 +15,7 @@ export default function AllopathyPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/hero2.jpg"
+            src="/modern_medicine.jpg"
             alt="Modern Treatments"
             fill
             priority
