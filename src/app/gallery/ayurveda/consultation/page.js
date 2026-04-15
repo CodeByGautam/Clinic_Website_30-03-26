@@ -7,17 +7,17 @@ import GalleryHero from "@/components/GalleryHero";
 export default function AyurvedaConsultationPage() {
   const slides = [
     {
-      src: "/images/ayurveda/consultation/nadi-parikshan.jpg",
+      src: "/Gallery2/ayu11.jpeg",
       title: "Nadi Parikshan",
       description: "Pulse diagnosis examination"
     },
     {
-      src: "/images/ayurveda/consultation/prakriti-analysis.jpg",
+      src: "/Gallery2/ayu18.jpeg",
       title: "Prakriti Analysis",
       description: "Body constitution assessment"
     },
     {
-      src: "/images/ayurveda/consultation/doctor-patient.jpg",
+      src: "/Gallery2/ayu20.jpeg",
       title: "Doctor Consultation",
       description: "One-on-one consultation"
     }

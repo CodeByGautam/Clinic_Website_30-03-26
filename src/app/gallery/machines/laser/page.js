@@ -1,50 +1,36 @@
-import GalleryHero from "@/components/GalleryHero";
-import GalleryGrid from "@/components/GalleryGrid";
+"use client";
 
-export const metadata = {
-  title: "Laser Machines Gallery | Advanced Laser Technology",
-  description: "Explore our state-of-the-art laser machines including diode lasers, CO2 fractional lasers, Q-switched lasers, and IPL systems for various dermatological treatments.",
-};
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import GalleryHero from "@/components/GalleryHero";
 
 export default function LaserMachinesPage() {
-  const galleryImages = [
+  const slides = [
     {
-      src: "/images/machines/laser/diode-laser.jpg",
+      src: "/machines/m4.jpeg",
       title: "Diode Laser System",
-      caption: "810nm hair removal laser",
-      description: "Advanced 810nm diode laser system for permanent hair reduction, suitable for all skin types with built-in cooling technology."
+      description: "810nm hair removal laser"
     },
     {
-      src: "/images/machines/laser/co2-fractional.jpg",
+      src: "/images/machines/laser/co2-fractional.jpg",    
       title: "Fractional CO2 Laser",
-      caption: "Skin resurfacing technology",
-      description: "UltraPulse fractional CO2 laser for advanced skin resurfacing, scar revision, and wrinkle reduction treatments."
+      description: "Skin resurfacing technology"
     },
     {
-      src: "/images/machines/laser/qswitched-ndyag.jpg",
+      src: "/machines/m4.jpeg",
       title: "Q-Switched Nd:YAG Laser",
-      caption: "Tattoo & pigmentation laser",
-      description: "High-powered Q-switched Nd:YAG laser for tattoo removal, pigmentation disorders, and carbon peel treatments."
-    },
-    // {
-    //   src: "/images/machines/laser/ipl-system.jpg",
-    //   title: "IPL System",
-    //   caption: "Intense Pulsed Light technology",
-    //   description: "Advanced IPL (Intense Pulsed Light) system for hair removal, skin rejuvenation, and vascular treatments."
-    // },
-    // {
-    //   src: "/images/machines/laser/erbium-laser.jpg",
-    //   title: "Erbium YAG Laser",
-    //   caption: "Gentle skin resurfacing",
-    //   description: "Erbium YAG laser for gentle skin resurfacing, mole removal, and precise ablative treatments with minimal downtime."
-    // },
-    // {
-    //   src: "/images/machines/laser/picolaser.jpg",
-    //   title: "PicoSure Laser",
-    //   caption: "Picosecond technology",
-    //   description: "Cutting-edge picosecond laser technology for faster tattoo removal, pigmentation treatment, and skin revitalization."
-    // }
+      description: "Tattoo & pigmentation laser"
+    }
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <main className="min-h-screen bg-white">
@@ -70,7 +56,64 @@ export default function LaserMachinesPage() {
         </div>
       </section>
 
-      <GalleryGrid images={galleryImages} />
+      {/* Slider Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${slides[current].src})`,
+              }}
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === current
+                  ? "bg-white scale-125"
+                  : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Arrows */}
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          &#8249;
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrent((current + 1) % slides.length)
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          &#8250;
+        </button>
+      </section>
     </main>
   );
 }

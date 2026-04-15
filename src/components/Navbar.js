@@ -81,6 +81,29 @@ export default function Navbar() {
     },
   };
 
+  const fusionMenuData = {
+  ayurvedaDermatology: {
+    title: "Ayurveda + Dermatology",
+    items: [
+      { name: "Psoriasis / Eczema", href: "/fusion-treatments/psoriasis-eczema" },
+      { name: "Acne & Acne Marks", href: "/fusion-treatments/acne-acne-marks" },
+      { name: "Pigmentation", href: "/fusion-treatments/pigmentation" },
+      { name: "Hair Loss", href: "/fusion-treatments/hair-loss" },
+      { name: "Fat Loss", href: "/fusion-treatments/fat-loss" },
+    ],
+  },
+  ayurvedaAllopathy: {
+    title: "Ayurveda + Allopathy",
+    items: [
+      { name: "Gastric Problem", href: "/fusion-treatments/gastric-problem" },
+      { name: "Hyper Acidity", href: "/fusion-treatments/hyper-acidity" },
+      { name: "Diabetes", href: "/fusion-treatments/diabetes" },
+      { name: "Hormonal Disorder", href: "/fusion-treatments/hormonal-disorder" },
+      { name: "Vitiligo", href: "/fusion-treatments/vitiligo" },
+    ],
+  },
+};
+
   const galleryMegaMenuData = {
     ayurvedaClinic: {
       title: "Ayurveda Clinic Gallery",
@@ -88,7 +111,7 @@ export default function Navbar() {
         { name: "Clinic Interior", href: "/gallery/ayurveda/clinic" },
         { name: "Treatment Rooms", href: "/gallery/ayurveda/treatment-rooms" },
         { name: "Panchakarma Sessions", href: "/gallery/ayurveda/panchakarma" },
-        { name: "Ayurvedic Facials", href: "/gallery/ayurveda/facial" },
+        // { name: "Ayurvedic Facials", href: "/gallery/ayurveda/facial" },
         { name: "Consultation Sessions", href: "/gallery/ayurveda/consultation" },
       ],
     },
@@ -117,7 +140,8 @@ export default function Navbar() {
   const mainMenuItems = [
     {
       name: "Fusion Treatments",
-      hasDropdown: false,
+      hasDropdown: true,
+      dropdownType: "fusion",
       href: "/fusion-treatments",
     },
     { 
@@ -353,6 +377,50 @@ export default function Navbar() {
                     </div>
                   )}
 
+                  {/* Fusion Treatments Dropdown */}
+                  {item.dropdownType === "fusion" && activeDropdown === item.name && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 w-[640px] bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
+  
+  <div className="grid grid-cols-2 gap-6 items-start">
+
+    {Object.values(fusionMenuData).map((category) => (
+      <div key={category.title} className="space-y-3">
+        
+        <h4 className="text-lg font-bold text-[#0B0F19] mb-3 pb-2 border-b border-gray-100">
+          {category.title}
+        </h4>
+
+        <ul className="space-y-2">
+          {category.items.map((treatment) => (
+            <li key={treatment.name}>
+              <Link
+                href={treatment.href}
+                className="block py-1 text-gray-600 text-sm transition-all duration-200 hover:text-[#0077C8] hover:translate-x-1"
+              >
+                {treatment.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+      </div>
+    ))}
+
+  </div>
+
+  {/* CTA Button */}
+  <div className="mt-6 pt-4 border-t border-gray-100 text-center">
+    <Link
+      href="/fusion-treatments"
+      className="inline-flex items-center gap-2 bg-[#0077C8] text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+    >
+      View All Fusion Treatments
+    </Link>
+  </div>
+
+</div>
+                  )}
+
                   {/* Gallery Mega Menu Dropdown */}
                   {item.dropdownType === "gallery" && activeDropdown === item.name && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
@@ -428,6 +496,47 @@ export default function Navbar() {
 
                 {/* Mobile Menu Items */}
                 <div className="space-y-4">
+                  {/* Fusion Treatments with Submenu */}
+                  <div>
+                    <button
+                      onClick={() => setActiveDropdown(activeDropdown === "Fusion Treatments" ? null : "Fusion Treatments")}
+                      className="flex items-center justify-between w-full py-3 text-lg font-medium text-[#0B0F19] border-b border-gray-100"
+                    >
+                      Fusion Treatments
+                      <ChevronDown className={`w-5 h-5 transition-transform ${activeDropdown === "Fusion Treatments" ? "rotate-180" : ""}`} />
+                    </button>
+                    {activeDropdown === "Fusion Treatments" && (
+                      <div className="pl-4 py-3 space-y-3">
+                        {Object.values(fusionMenuData).map((category) => (
+                          <div key={category.title} className="mb-4">
+                            <h4 className="font-semibold text-[#00A651] mb-2">{category.title}</h4>
+                            <ul className="space-y-2">
+                              {category.items.map((treatment) => (
+                                <li key={treatment.name}>
+                                  <Link
+                                    href={treatment.href}
+                                    className="text-gray-600 hover:text-[#0077C8] transition-colors text-sm block py-1"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {treatment.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                        
+                        <Link
+                          href="/fusion-treatments"
+                          className="inline-flex items-center gap-2 bg-[#0077C8] text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          View All Fusion Treatments
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
                   {/* Treatments with Submenu */}
                   <div>
                     <button
@@ -551,6 +660,7 @@ export default function Navbar() {
                   {mainMenuItems
                     .filter(
                       (item) =>
+                        item.name !== "Fusion Treatments" &&
                         item.name !== "Dermatology" &&
                         item.name !== "Ayurveda" &&
                         item.name !== "Gallery"

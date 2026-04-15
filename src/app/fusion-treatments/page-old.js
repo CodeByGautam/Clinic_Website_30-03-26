@@ -1,26 +1,30 @@
-import Image from "next/image";
 import Link from "next/link";
-import {
-  BadgeCheck,
-  Building2,
-  CheckCircle,
-  HeartHandshake,
-  Leaf,
-  Microscope,
-  Shield,
+import Image from "next/image";
+import { fusionTreatments } from "@/data/fusionTreatments";
+import { 
+  Shield, 
+  Users, 
+  Clock, 
+  CheckCircle, 
+  ArrowRight,
+  Star,
+  Heart,
+  Zap,
+  Target,
+  Phone,
+  MessageCircle,
+  Calendar,
   Sparkles,
   Stethoscope,
-  ThumbsUp,
-  Users,
+  ThumbsUp
 } from "lucide-react";
 import TreatmentFAQ from "@/components/TreatmentFAQ";
 import DoctorCard from "@/components/DoctorCard";
 import { doctors } from "@/data/doctors";
 
 export const metadata = {
-  title: "Fusion Treatments in Pune | Ayurveda + Dermatology + Allopathy",
-  description:
-    "Get advanced fusion treatments combining Ayurveda, Dermatology, and Allopathy for faster and long-lasting results.",
+  title: "Fusion Treatments | Advanced Ayurveda + Modern Medicine",
+  description: "Experience the power of fusion treatments combining Ayurveda and modern medicine for complete healing. 10+ specialized treatments for skin, hair, and medical conditions.",
   alternates: {
     canonical: "/fusion-treatments",
   },
@@ -47,7 +51,7 @@ function SystemCard({ icon: Icon, title, bullets }) {
           <ul className="mt-3 space-y-2 text-sm text-gray-600">
             {bullets.map((b) => (
               <li key={b} className="flex items-start gap-2">
-                <CheckCircle className="mt-0.5 h-4 w-4 text-[#00A651]" />
+                <CheckCircle2 className="mt-0.5 h-4 w-4 text-[#00A651]" />
                 <span>{b}</span>
               </li>
             ))}
@@ -87,63 +91,42 @@ function ProblemSolutionItem({ text, variant }) {
 }
 
 function TreatmentCard({ title, tag, description }) {
-  // Generate slug from title
-  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-
   return (
-    <div className="group rounded-2xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02]">
-      <div className="p-6">
-        {/* Title */}
-        <h3 className="text-lg font-bold text-[#0B0F19]">{title}</h3>
-        
-        {/* Tag */}
-        <div className="mt-3">
-          <span className="inline-flex items-center rounded-full bg-[#EAF6FF] px-3 py-1 text-xs font-semibold text-[#0077C8]">
-            {tag}
-          </span>
-        </div>
-
-        {/* Description */}
-        <p className="mt-3 text-gray-600 leading-relaxed">{description}</p>
-
-        {/* Bullet Points */}
-        <div className="mt-4 space-y-2">
-          <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-[#00A651] flex-shrink-0" />
-            <span className="text-sm text-gray-700">Faster results</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-[#00A651] flex-shrink-0" />
-            <span className="text-sm text-gray-700">Long-term benefits</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-[#00A651] flex-shrink-0" />
-            <span className="text-sm text-gray-700">Expert-guided care</span>
+    <div className="group rounded-2xl bg-white p-6 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h3 className="text-lg font-bold text-[#0B0F19]">{title}</h3>
+          <div className="mt-2">
+            <span className="inline-flex items-center rounded-full bg-[#EAF6FF] px-3 py-1 text-xs font-semibold text-[#0077C8]">
+              {tag}
+            </span>
           </div>
         </div>
-
-        {/* CTA Button */}
-        <div className="mt-6">
-          <Link
-            href={`/fusion-treatments/${slug}`}
-            className="inline-flex items-center text-[#0077C8] font-semibold hover:underline transition-all duration-200"
+        <div className="rounded-2xl bg-[#F7FAFC] p-3 ring-1 ring-gray-100">
+          <Sparkles className="h-5 w-5 text-[#00A651]" />
+        </div>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-gray-600">{description}</p>
+      <div className="mt-6">
+        <Link
+          href="/appointment"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[#0077C8] hover:text-blue-700"
+        >
+          Learn More
+          <svg
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            View Treatment
-            <svg
-              className="ml-1 h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
-        </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </Link>
       </div>
     </div>
   );
@@ -377,24 +360,24 @@ export default function FusionTreatmentsPage() {
       </section>
 
       {/* 4. FUSION TREATMENTS GRID */}
-      <section className="bg-gray-50 py-20">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col gap-4 md:items-center md:text-center">
-            {/* Label */}
-            <span className="inline-flex items-center rounded-full bg-[#EAF6FF] px-4 py-2 text-sm font-semibold text-[#0077C8]">
-              Our Expertise
-            </span>
-            
-            {/* Main Heading */}
-            <h2 className="text-4xl font-bold text-[#0B0F19] sm:text-5xl relative">
-              Our Specialized Fusion Treatments
-              <div className="absolute -bottom-2 left-0 h-0.5 w-full bg-[#0077C8] rounded-full"></div>
-            </h2>
-            
-            {/* Subtext */}
-            <p className="mt-4 max-w-3xl text-gray-600 text-lg leading-relaxed">
-              Advanced fusion of Ayurveda, Dermatology and Allopathy for long-term healing.
-            </p>
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-[#0B0F19]">
+                Our Specialized Fusion Treatments
+              </h2>
+              <p className="mt-3 max-w-2xl text-gray-600">
+                High-impact, integrated plans designed to deliver faster relief
+                with durability.
+              </p>
+            </div>
+            <Link
+              href="/appointment"
+              className="inline-flex items-center justify-center rounded-full bg-[#0077C8] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-blue-700 hover:shadow-lg"
+            >
+              Book Appointment
+            </Link>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

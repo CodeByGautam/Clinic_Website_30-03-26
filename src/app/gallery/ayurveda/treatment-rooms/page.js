@@ -7,17 +7,17 @@ import GalleryHero from "@/components/GalleryHero";
 export default function AyurvedaTreatmentRoomsPage() {
   const slides = [
     {
-      src: "/images/ayurveda/treatment-rooms/panchakarma-room.jpg",
+      src: "/Gallery2/ayu10.jpeg",
       title: "Panchakarma Therapy Room",
       description: "Traditional detox therapy space"
     },
     {
-      src: "/images/ayurveda/treatment-rooms/massage-room.jpg",
+      src: "/Gallery2/ayu17.jpeg",
       title: "Ayurvedic Massage Room",
       description: "Abhyanga therapy space"
     },
     {
-      src: "/images/ayurveda/treatment-rooms/shirodhara-room.jpg",
+      src: "/Gallery2/ayu18.jpeg",
       title: "Shirodhara Treatment Room",
       description: "Forehead oil flow therapy"
     }

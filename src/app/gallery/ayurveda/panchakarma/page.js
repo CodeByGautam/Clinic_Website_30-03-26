@@ -7,30 +7,30 @@ import GalleryHero from "@/components/GalleryHero";
 export default function AyurvedaPanchakarmaPage() {
   const slides = [
     {
-      src: "/Gallery/VAMANA.jpg",
+      src: "/Gallery2/panchakarma1.jpeg",
       title: "Vamana Therapy",
       description: "Therapeutic emesis treatment"
     },
     {
-      src: "/Gallery/VIRECHANA.jpg",
+      src: "/Gallery2/ayu4.jpeg",
       title: "Virechana Therapy",
       description: "Purgation therapy session"
     },
     {
-      src: "/Gallery/BASTI.jpg",
+      src: "/Gallery2/ayu10.jpeg",
       title: "Basti Therapy Session",
       description: "Medicated enema treatment"
     },
-    {
-      src: "/nasya.jpg",
-      title: "Nasya Therapy Session",
-      description: "Nasal administration therapy"
-    },
-    {
-      src: "/Gallery/RAKTAMOKSHANA.jpg",
-      title: "Raktamokshana Therapy",
-      description: "Blood purification treatment"
-    }
+    // {
+    //   src: "/nasya.jpg",
+    //   title: "Nasya Therapy Session",
+    //   description: "Nasal administration therapy"
+    // },
+    // {
+    //   src: "/Gallery/RAKTAMOKSHANA.jpg",
+    //   title: "Raktamokshana Therapy",
+    //   description: "Blood purification treatment"
+    // }
   ];
 
   const [current, setCurrent] = useState(0);

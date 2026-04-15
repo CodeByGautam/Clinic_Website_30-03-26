@@ -1,50 +1,36 @@
-import GalleryHero from "@/components/GalleryHero";
-import GalleryGrid from "@/components/GalleryGrid";
+"use client";
 
-export const metadata = {
-  title: "Dermatology Treatment Rooms Gallery | Advanced Therapy Spaces",
-  description: "View our modern dermatology treatment rooms equipped with advanced technology for skin treatments, laser therapies, and cosmetic procedures.",
-};
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import GalleryHero from "@/components/GalleryHero";
 
 export default function DermatologyTreatmentRoomsPage() {
-  const galleryImages = [
+  const slides = [
     {
-      src: "/Gallery/acne treatment.jpg",
+      src: "/clinic/clinic58.jpeg",
       title: "Laser Treatment Room",
-      caption: "Advanced laser therapy space",
-      description: "State-of-the-art laser treatment room equipped with advanced laser systems for hair removal, skin resurfacing, and pigmentation treatments."
+      description: "Advanced laser therapy space"
     },
     {
-      src: "/Gallery/scar-revision.jpg",
+      src: "/clinic/clinic37.jpeg",
       title: "Facial Treatment Suite",
-      caption: "Premium facial therapy space",
-      description: "Luxurious facial treatment suite designed for medi-facials, chemical peels, and advanced skin rejuvenation procedures."
+      description: "Premium facial therapy space"
     },
-    // {
-    //   src: "/images/derma/treatment-rooms/injection-room.jpg",
-    //   title: "Injection Therapy Room",
-    //   caption: "Injectable treatments space",
-    //   description: "Specialized room for Botox, fillers, PRP, and other injectable treatments with medical-grade equipment and sterilization protocols."
-    // },
-    // {
-    //   src: "/images/derma/treatment-rooms/mnrf-room.jpg",
-    //   title: "MNRF Treatment Room",
-    //   caption: "Microneedling RF therapy",
-    //   description: "Dedicated MNRF (Microneedling Radiofrequency) room for advanced acne scar treatment, skin tightening, and rejuvenation."
-    // },
     {
-      src: "/images/derma/treatment-rooms/hydrafacial-room.jpg",
+      src: "/clinic/clinic27.jpeg",
       title: "Hydrafacial Suite",
-      caption: "Advanced hydrafacial space",
-      description: "Specialized Hydrafacial treatment room equipped with the latest vortex-fusion technology for deep cleansing and hydration."
-    },
-    // {
-    //   src: "/images/derma/treatment-rooms/led-room.jpg",
-    //   title: "LED Therapy Room",
-    //   caption: "Phototherapy treatment space",
-    //   description: "Advanced LED light therapy room for treating acne, reducing inflammation, and promoting skin healing with medical-grade equipment."
-    // }
+      description: "Advanced hydrafacial space"
+    }
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <main className="min-h-screen bg-white">
@@ -69,7 +55,64 @@ export default function DermatologyTreatmentRoomsPage() {
         </div>
       </section>
 
-      <GalleryGrid images={galleryImages} />
+      {/* Slider Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${slides[current].src})`,
+              }}
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === current
+                  ? "bg-white scale-125"
+                  : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Arrows */}
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ‹
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrent((current + 1) % slides.length)
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-md"
+        >
+          ›
+        </button>
+      </section>
     </main>
   );
 }

@@ -17,7 +17,7 @@ export default function GalleryPage() {
         { name: "Clinic Interior", href: "/gallery/ayurveda/clinic", image: "/images/ayurveda-clinic.jpg" },
         { name: "Treatment Rooms", href: "/gallery/ayurveda/treatment-rooms", image: "/images/treatment-rooms.jpg" },
         { name: "Panchakarma Sessions", href: "/gallery/ayurveda/panchakarma", image: "/images/panchakarma.jpg" },
-        { name: "Ayurvedic Facials", href: "/gallery/ayurveda/facial", image: "/images/ayurveda-facial.jpg" },
+          // { name: "Ayurvedic Facials", href: "/gallery/ayurveda/facial", image: "/images/ayurveda-facial.jpg" },
         { name: "Consultation", href: "/gallery/ayurveda/consultation", image: "/images/consultation.jpg" },
       ]
     },
