@@ -27,23 +27,18 @@ export default function TreatmentGrid({
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
             >
               <div 
-                className="h-48 flex items-center justify-center"
+                className="h-48 flex items-center justify-center overflow-hidden"
                 style={{ background: `linear-gradient(135deg, ${primaryColor}10, ${secondaryColor}10)` }}
               >
-                <div 
-                  className="w-70 h-45 rounded-full flex items-center justify-center overflow-hidden"
-                  style={{ backgroundColor: `${primaryColor}15` }}
-                >
-                  {treatment.img ? (
-                    <img 
-                      src={treatment.img} 
-                      alt={treatment.title}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-4xl">{treatment.icon}</span>
-                  )}
-                </div>
+                {treatment.img ? (
+                  <img 
+                    src={treatment.img} 
+                    alt={treatment.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-4xl">{treatment.icon}</span>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0B0F19] mb-2 group-hover:text-[#0077C8] transition-colors">

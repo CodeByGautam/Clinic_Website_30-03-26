@@ -64,7 +64,7 @@ export async function POST(request) {
       auth: { user, pass },
     });
 
-    const to = "healthfusion33@gmail.com";
+    const to = "healthfusion.live@gmail.com";
 
     const subject = `New Appointment Request: ${name} (${treatment})`;
 

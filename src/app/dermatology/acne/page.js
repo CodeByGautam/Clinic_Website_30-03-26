@@ -6,9 +6,7 @@ export const metadata = {
 };
 
 export default function AcneTreatmentPage() {
-  const heroImage =
-    // "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=2400&q=80";
-    "/acne.jpg";
+  const heroImage = "/acne.jpg";
 
   return (
     <PremiumTreatmentPage
@@ -16,11 +14,10 @@ export default function AcneTreatmentPage() {
       description="Advanced dermatologist-approved solutions for acne control, oil balance, and clearer skin—personalized to your skin type and lifestyle."
       heroImage={heroImage}
       understanding={{
-        // title: "Understanding Acne",
+        title: "Understanding Acne",
         description:
           "Acne is a common inflammatory skin condition caused by clogged pores, excess oil production, bacteria, and irritation. It may present as whiteheads, blackheads, pimples, or cystic acne.\n\nAt Healthfusion, we treat acne with a medically guided plan that targets the root cause—helping reduce active breakouts and improving overall skin texture.",
         image:
-          // "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=2400&q=80",
           "/acne.jpg"
       }}
       causesTitle="Common Causes of Acne"

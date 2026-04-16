@@ -28,7 +28,7 @@ export const treatments = {
     {
       name: "Panchakarma",
       slug: "/ayurveda/panchakarma",
-      image: "/Gallery/vaman2.jpeg"
+      image: "/NashyaPanchkarma.jpg"
     }
   ],
   allopathy: {

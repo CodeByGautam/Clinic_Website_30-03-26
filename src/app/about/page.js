@@ -49,9 +49,9 @@ export default function AboutOverviewPage() {
       <section className="grid grid-cols-2 md:grid-cols-4 gap-4 p-8 border-b border-gray-100">
         {[
           { number: "1000+", label: "Happy Patients" },
-          { number: "5000+", label: "Treatments" },
+          { number: "50+", label: "Treatments" },
           { number: "15+", label: "Years Experience" },
-          { number: "98%", label: "Satisfaction" }
+          { number: "92%", label: "Satisfaction" }
         ].map((stat, index) => (
           <div key={index} className="text-center p-4">
             <p className="text-2xl md:text-3xl font-bold text-[#00A651]">{stat.number}</p>

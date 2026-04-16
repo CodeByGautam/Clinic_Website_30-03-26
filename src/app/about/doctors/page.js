@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function OurDoctorsPage() {
-  const doctors = [
+  const allopathyDoctors = [
     {
       name: "Dr. Ajay Devershi",
       qualification: "MBBS, DNB (General Surgery) - General Surgeon, Laparoscopic Surgeon",
@@ -20,12 +20,22 @@ export default function OurDoctorsPage() {
       // specialization: "Dermatologist, Cosmetologist, Trichologist",
       image: "/shruti.jpeg",
       color: "#0077C8"
-    },
+    }
+  ];
+
+  const ayurvedaDoctors = [
     {
       name: "Dr. Shubhi Rao",
       qualification: "BAMS, M.D. — Specialized in Ayurveda",
       // specialization: "Ayurveda Specialist & Panchakarma Expert",
       image: "/shubhi.jpg",
+      color: "#00A651"
+    },
+    {
+      name: "Dr. Aishwarya Mahale",
+      qualification: "Senior Cosmetologist",
+      // specialization: "Skin & Hair Specialist",
+      image: "/aishwarya.jpeg",
       color: "#00A651"
     }
   ];
@@ -43,34 +53,58 @@ export default function OurDoctorsPage() {
           Our team of experienced doctors combines expertise in Ayurveda and modern dermatology
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {doctors.map((doctor, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100"
-            >
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src={doctor.image}
-                  alt={doctor.name}
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                {/* <div 
-                  className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-semibold text-white"
-                  style={{ backgroundColor: doctor.color }}
-                >
-                  {doctor.specialization.split(',')[0]}
-                </div> */}
+        {/* Allopathy Doctors Section */}
+        <div className="mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {allopathyDoctors.map((doctor, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100"
+              >
+                <div className="relative h-72 overflow-hidden">
+                  <Image
+                    src={doctor.image}
+                    alt={doctor.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-[#0B0F19] mb-1">{doctor.name}</h3>
+                  <p className="text-xs font-medium mb-1" style={{ color: doctor.color }}>{doctor.qualification}</p>
+                  {/* <p className="text-gray-600 text-xs">{doctor.specialization}</p> */}
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-[#0B0F19] mb-1">{doctor.name}</h3>
-                <p className="text-xs font-medium mb-1" style={{ color: doctor.color }}>{doctor.qualification}</p>
-                {/* <p className="text-gray-600 text-xs">{doctor.specialization}</p> */}
+            ))}
+          </div>
+        </div>
+
+        {/* Ayurveda Doctors Section */}
+        <div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {ayurvedaDoctors.map((doctor, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100"
+              >
+                <div className="relative h-72 overflow-hidden">
+                  <Image
+                    src={doctor.image}
+                    alt={doctor.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-[#0B0F19] mb-1">{doctor.name}</h3>
+                  <p className="text-xs font-medium mb-1" style={{ color: doctor.color }}>{doctor.qualification}</p>
+                  {/* <p className="text-gray-600 text-xs">{doctor.specialization}</p> */}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

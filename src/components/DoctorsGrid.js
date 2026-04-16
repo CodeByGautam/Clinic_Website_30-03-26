@@ -15,10 +15,27 @@ export default function DoctorsGrid() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {doctors.map((doctor, index) => (
-            <DoctorCard key={index} doctor={doctor} />
-          ))}
+          {doctors.map((doctor, index) => {
+            if (index === 3) {
+              // 4th doctor (index 3) - skip in main grid
+              return null;
+            }
+            if (index < 3) {
+              // 1st, 2nd, and 3rd doctors - place in main grid
+              return <DoctorCard key={index} doctor={doctor} />;
+            }
+            return null;
+          })}
         </div>
+        
+        {/* 4th doctor card below second card in center */}
+        {doctors[3] && (
+          <div className="mt-8">
+            <div className="max-w-md mx-auto">
+              <DoctorCard doctor={doctors[3]} />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

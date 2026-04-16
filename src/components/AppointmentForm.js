@@ -237,8 +237,8 @@ export default function AppointmentForm() {
                 Select treatment
               </option>
               <option value="Dermatology">Dermatology</option>
-              <option value="Hair">Hair</option>
-              <option value="Laser">Laser</option>
+              {/* <option value="Hair">Hair</option> */}
+              <option value="Laser">Fusion</option>
               <option value="Ayurveda">Ayurveda</option>
               <option value="Other">Other</option>
             </select>

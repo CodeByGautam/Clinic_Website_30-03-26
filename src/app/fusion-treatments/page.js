@@ -286,10 +286,10 @@ export default function FusionTreatmentsPage() {
               </Link> */}
             </div>
 
-            <div className="mt-16 flex flex-wrap gap-4">
+            {/* <div className="mt-16 flex flex-wrap gap-4">
               <TrustBadge icon={Shield} label="15+ Years Experience" />
               <TrustBadge icon={Users} label="10,000+ Happy Patients" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

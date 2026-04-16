@@ -24,7 +24,7 @@ export default function PremiumTreatmentPage({
   understanding = {
     title: "Understanding the Condition",
     description: "",
-    image: "https://placehold.co/900x700/png",
+    // image: "https://placehold.co/900x700/png",
   },
   causesTitle = "Common Causes / Symptoms",
   causes = [],
@@ -123,8 +123,8 @@ export default function PremiumTreatmentPage({
                 src={understanding.image}
                 alt={understanding.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -329,7 +329,7 @@ export default function PremiumTreatmentPage({
               <div className="relative h-[260px] sm:h-[360px]">
                 <Image
                   src={beforeAfter.afterImage}
-                  alt={`${title} after`}
+                  alt={`${title} after treatment`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -338,6 +338,7 @@ export default function PremiumTreatmentPage({
             </div>
           </div>
         </div>
+      </section>
       </section> */}
 
       <div className="bg-[#F7FAFC]">

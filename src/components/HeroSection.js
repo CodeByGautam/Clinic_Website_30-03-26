@@ -39,7 +39,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] w-full overflow-hidden">
+    <section className="relative -mt-30 sm:mt-0 -mb-30 sm:mb-0 h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] w-full overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -54,7 +54,7 @@ export default function HeroSection() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              className="object-cover"
+              className="object-contain md:object-cover object-center transition-all duration-700"
               sizes="100vw"
             />
           </div>
@@ -62,15 +62,15 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-0">
+      <div className="relative z-20 h-full flex items-center justify-start">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
             {/* Label */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 mt-4">
               <span className="w-2 h-2 bg-[#00A651] rounded-full"></span>
-              <span className="text-white/90 text-sm font-medium tracking-wide">
+              {/* <span className="text-white/90 text-sm font-medium tracking-wide">
                 Trusted Dermatology Clinic
-              </span>
+              </span> */}
             </div>
 
             {/* Main Heading */}

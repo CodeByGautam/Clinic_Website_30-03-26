@@ -47,14 +47,6 @@ export default function DoctorCard({ doctor }) {
           >
             Book Consultation
           </a>
-          <a
-            href="https://wa.me/919270216369"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-green-600 transition-colors duration-200"
-          >
-            WhatsApp Us
-          </a>
         </div>
       </div>
     </div>

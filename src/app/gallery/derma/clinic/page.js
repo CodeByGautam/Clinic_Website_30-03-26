@@ -21,8 +21,8 @@ export default function DermatologyClinicPage() {
       description: "Spacious and comfortable waiting lounge with modern amenities for a relaxing pre-treatment experience."
     },
     {
-      src: "/clinic/clinic58.jpeg",
-      title: "Consultation Suite",
+      src: "/clinic/clinic20.jpeg",
+      title: "Consultation Room",
       caption: "Private examination rooms",
       description: "Modern consultation suites equipped with advanced diagnostic tools for comprehensive skin analysis."
     },

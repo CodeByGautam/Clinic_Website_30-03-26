@@ -58,13 +58,13 @@ export default function PanchakarmaPage() {
     {
       title: "Virechana",
       description: "Purgation therapy to remove Pitta toxins from the liver, gallbladder, and intestines.",
-      img: "/virechana.jpg",
+      img: "/Gallery/VirechanaTherapy.jpeg",
       href: "/ayurveda/panchakarma/virechana"
     },
     {
       title: "Basti",
       description: "Medicated enema therapy to cleanse the colon and balance Vata dosha.",
-      img: "/Gallery/BASTI.jpg",
+      img: "/Gallery/basti-1.jpg",
       href: "/ayurveda/panchakarma/basti"
     },
     {

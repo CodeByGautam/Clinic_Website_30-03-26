@@ -33,7 +33,7 @@ export default function TreatmentCard({
       href={href}
       className={`group relative overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${themeStyles.ring} hover:ring-1`}
     >
-      <div className="relative h-44 w-full">
+      <div className="relative h-56 w-full">
         <Image
           src={image}
           alt={title}
@@ -55,18 +55,17 @@ export default function TreatmentCard({
       </div>
 
       <div className="p-6">
-        <h3 className="text-lg font-bold text-[#0B0F19]">{title}</h3>
-        {description ? (
-          <p className="mt-2 text-sm text-gray-600 leading-relaxed">{description}</p>
-        ) : null}
-
-        <div className="mt-5">
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="text-lg font-bold text-[#0B0F19] flex-1">{title}</h3>
           <span
-            className={`inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold text-white transition-all duration-300 ${themeStyles.button} group-hover:scale-[1.02]`}
+            className={`inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white transition-all duration-300 ${themeStyles.button} group-hover:scale-[1.02] whitespace-nowrap`}
           >
             Explore
           </span>
         </div>
+        {description ? (
+          <p className="mt-2 text-sm text-gray-600 leading-relaxed">{description}</p>
+        ) : null}
       </div>
     </Link>
   );

@@ -12,12 +12,12 @@ export default function LaserMachinesPage() {
       description: "810nm hair removal laser"
     },
     {
-      src: "/images/machines/laser/co2-fractional.jpg",    
+      src: "/machines/m5.jpeg",    
       title: "Fractional CO2 Laser",
       description: "Skin resurfacing technology"
     },
     {
-      src: "/machines/m4.jpeg",
+      src: "/machines/m10.jpeg",
       title: "Q-Switched Nd:YAG Laser",
       description: "Tattoo & pigmentation laser"
     }
@@ -69,7 +69,7 @@ export default function LaserMachinesPage() {
           >
             {/* Background Image */}
             <div
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-contain bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url(${slides[current].src})`,
               }}

@@ -130,9 +130,9 @@ export default function Navbar() {
       items: [
         { name: "Laser Machines", href: "/gallery/machines/laser" },
         { name: "Skin Treatment Machines", href: "/gallery/machines/skin-treatment" },
-        { name: "Hair Treatment Machines", href: "/gallery/machines/hair-treatment" },
-        { name: "RF & MNRF Machines", href: "/gallery/machines/rf" },
-        { name: "Facial Machines", href: "/gallery/machines/facial-machines" },
+        // { name: "Hair Treatment Machines", href: "/gallery/machines/hair-treatment" },
+        // { name: "RF & MNRF Machines", href: "/gallery/machines/rf" },
+        // { name: "Facial Machines", href: "/gallery/machines/facial-machines" },
       ],
     },
   };

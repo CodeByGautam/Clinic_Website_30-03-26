@@ -7,17 +7,17 @@ import GalleryHero from "@/components/GalleryHero";
 export default function AyurvedaClinicPage() {
   const slides = [
     {
-      src: "/clinic/clinic55.jpeg",
+      src: "/Gallery2/a19.jpeg",
       title: "Clinic Reception",
       description: "Warm and welcoming space designed for comfort"
     },
     {
-      src: "/clinic/clinic56.jpeg",
+      src: "/Gallery2/a18.jpeg",
       title: "Waiting Area",
       description: "Relax in a calm and peaceful environment"
     },
     {
-      src: "/clinic/clinic20.jpeg",
+      src: "/Gallery2/a14.jpeg",
       title: "Consultation Room",
       description: "Private and professional care"
     }
