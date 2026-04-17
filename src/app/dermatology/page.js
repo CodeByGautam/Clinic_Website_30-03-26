@@ -1,99 +1,138 @@
-// export const metadata = {
-//   title: "Our Treatments | Healthfusion Multispeciality Clinic",
-//   description: "Explore our comprehensive range of dermatology and aesthetic treatments at Healthfusion Multispeciality Clinic.",
-// };
+import Link from "next/link";
+import { ArrowRight, Sparkles } from "lucide-react";
 
-// export default function TreatmentsPage() {
-//   const treatments = [
-//     {
-//       title: "Acne Treatment",
-//       description: "Effective solutions for acne and acne scars",
-//       href: "/dermatology/acne",
-//       icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-//     },
-//     {
-//       title: "Anti-Ageing Treatment",
-//       description: "Turn back time with our anti-ageing solutions",
-//       href: "/dermatology/anti-ageing",
-//       icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
-//     },
-//     {
-//       title: "Skin Brightening",
-//       description: "Achieve radiant, even-toned skin",
-//       href: "/dermatology/skin-brightening",
-//       icon: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
-//     },
-//     {
-//       title: "Hair & Scalp Therapy",
-//       description: "Solutions for hair loss and scalp conditions",
-//       href: "/dermatology/hair-scalp-therapy",
-//       icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
-//     },
-//     {
-//       title: "Skin Resurfacing",
-//       description: "Advanced treatments for skin texture and scars",
-//       href: "/dermatology/skin-resurfacing",
-//       icon: "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z",
-//     },
-//   ];
+export const metadata = {
+  title: "Dermatology Treatments | Healthfusion Multispeciality Clinic",
+  description: "Explore our comprehensive range of dermatology and aesthetic treatments at Healthfusion Multispeciality Clinic.",
+};
 
-//   return (
-//     <main className="min-h-screen bg-white">
-//       {/* Hero Section */}
-//       <section className="py-20 bg-gradient-to-br from-[#00A651]/5 to-[#0077C8]/5">
-//         <div className="max-w-7xl mx-auto px-6">
-//           <div className="text-center max-w-3xl mx-auto">
-//             <h1 className="text-4xl md:text-5xl font-bold text-[#0B0F19] mb-6">
-//               Our Treatments
-//             </h1>
-//             <p className="text-lg text-gray-600">
-//               Discover our comprehensive range of dermatology and aesthetic 
-//               treatments designed to help you look and feel your best.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
+export default function DermatologyPage() {
+  const treatments = [
+    {
+      title: "Acne Treatment",
+      description: "Effective solutions for acne and acne scars",
+      href: "/dermatology/acne",
+      icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Anti-Ageing Treatment",
+      description: "Turn back time with our anti-ageing solutions",
+      href: "/dermatology/anti-ageing",
+      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Pigmentation Treatment",
+      description: "Advanced treatments for skin pigmentation issues",
+      href: "/dermatology/pigmentation",
+      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Scar Treatment",
+      description: "Effective scar reduction and removal treatments",
+      href: "/dermatology/scar-treatment",
+      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Hair Treatment",
+      description: "Comprehensive hair loss and hair restoration solutions",
+      href: "/dermatology/hair-treatment",
+      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Laser Hair Removal",
+      description: "Permanent hair removal using advanced laser technology",
+      href: "/dermatology/laser-hair-removal",
+      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    }
+  ];
 
-//       {/* Treatments Grid */}
-//       <section className="py-20">
-//         <div className="max-w-7xl mx-auto px-6">
-//           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-//             {treatments.map((treatment, index) => (
-//               <a
-//                 key={index}
-//                 href={treatment.href}
-//                 className="group bg-[#F7FAFC] rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-//               >
-//                 <div className="w-16 h-16 rounded-full bg-[#0077C8]/10 flex items-center justify-center mb-6 group-hover:bg-[#0077C8] transition-colors duration-300">
-//                   <svg
-//                     className="w-8 h-8 text-[#0077C8] group-hover:text-white transition-colors duration-300"
-//                     fill="none"
-//                     stroke="currentColor"
-//                     viewBox="0 0 24 24"
-//                   >
-//                     <path
-//                       strokeLinecap="round"
-//                       strokeLinejoin="round"
-//                       strokeWidth={1.5}
-//                       d={treatment.icon}
-//                     />
-//                   </svg>
-//                 </div>
-//                 <h3 className="text-xl font-bold text-[#0B0F19] mb-2 group-hover:text-[#0077C8] transition-colors">
-//                   {treatment.title}
-//                 </h3>
-//                 <p className="text-gray-600 mb-4">{treatment.description}</p>
-//                 <span className="inline-flex items-center text-[#0077C8] font-semibold group-hover:text-blue-700 transition-colors">
-//                   Learn More
-//                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-//                   </svg>
-//                 </span>
-//               </a>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
+  return (
+    <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-br from-[#F7FAFC] to-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6 bg-[#0077C8]/10 text-[#0077C8]">
+              <Sparkles className="w-4 h-4" />
+              Dermatology Treatments
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0B0F19] mb-4">
+              Advanced Dermatology Solutions
+            </h1>
+            <p className="text-xl text-gray-600 mb-4">
+              Expert care for all your skin and hair concerns
+            </p>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              Experience the latest in dermatological treatments with our team of expert dermatologists 
+              and state-of-the-art technology for optimal results.
+            </p>
+          </div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute top-20 left-10 w-64 h-64 rounded-full blur-3xl opacity-20 bg-[#0077C8]" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full blur-3xl opacity-20 bg-[#00A651]" />
+      </section>
+
+      {/* Treatments Grid */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {treatments.map((treatment, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group"
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <div 
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center"
+                    style={{ backgroundColor: "#0077C815", color: "#0077C8" }}
+                  >
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={treatment.icon} />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0B0F19] mb-2 group-hover:text-[#0077C8] transition-colors">
+                      {treatment.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {treatment.description}
+                    </p>
+                  </div>
+                </div>
+                
+                <Link
+                  href={treatment.href}
+                  className="inline-flex items-center gap-2 text-[#0077C8] font-semibold hover:text-[#00A651] transition-colors"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-[#0077C8] to-[#00A651]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Transform Your Skin?
+          </h2>
+          <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+            Schedule a consultation with our expert dermatologists and discover the perfect treatment for your skin concerns.
+          </p>
+          <Link
+            href="/appointment"
+            className="inline-flex items-center gap-2 bg-white text-[#0B0F19] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg"
+          >
+            Book Consultation
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
