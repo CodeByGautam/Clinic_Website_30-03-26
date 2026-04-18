@@ -27,7 +27,7 @@ export default function TreatmentGrid({
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
             >
               <div 
-                className="h-48 flex items-center justify-center overflow-hidden"
+                className="h-56 sm:h-60 flex items-center justify-center overflow-hidden"
                 style={{ background: `linear-gradient(135deg, ${primaryColor}10, ${secondaryColor}10)` }}
               >
                 {treatment.img ? (

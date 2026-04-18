@@ -66,7 +66,7 @@ export default function AppointmentPage() {
                     Personalized treatment plans
                   </p>
                   <h3 className="mt-1 text-white text-2xl sm:text-3xl font-bold">
-                    A premium, comfortable consultation
+                    Expert care for your health journey
                   </h3>
                 </div>
               </div>

@@ -142,7 +142,7 @@ export default function AppointmentForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-3xl border border-[#00A651]/20 bg-gradient-to-br from-[#00A651]/10 to-white p-6 sm:p-8">
+      <div className="rounded-3xl border border-[#00A651]/20 bg-gradient-to-br from-[#00A651]/10 to-white p-4 sm:p-6">
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-6 h-6 text-[#00A651] flex-shrink-0" />
           <div>
@@ -168,7 +168,7 @@ export default function AppointmentForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <div className="relative">
@@ -274,7 +274,7 @@ export default function AppointmentForm() {
             onChange={handleChange("notes")}
             onBlur={handleBlur("notes")}
             placeholder=" "
-            rows={4}
+            rows={3}
             className={`${fieldClass} resize-none`}
           />
           <label className={labelClass}>Notes (optional)</label>
@@ -290,7 +290,7 @@ export default function AppointmentForm() {
       <button
         type="submit"
         disabled={!canSubmit || submitting}
-        className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0077C8] text-white px-6 py-4 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0077C8] text-white px-6 py-3 sm:py-4 font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {submitting ? (
           <>

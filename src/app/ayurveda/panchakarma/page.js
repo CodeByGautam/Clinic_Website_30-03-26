@@ -64,7 +64,7 @@ export default function PanchakarmaPage() {
     {
       title: "Basti",
       description: "Medicated enema therapy to cleanse the colon and balance Vata dosha.",
-      img: "/Gallery/basti-1.jpg",
+      img: "/basti2.jpeg",
       href: "/ayurveda/panchakarma/basti"
     },
     {

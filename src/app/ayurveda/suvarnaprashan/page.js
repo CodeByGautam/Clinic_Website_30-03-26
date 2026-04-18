@@ -8,7 +8,7 @@ export const metadata = {
 export default function SuvarnaprashanPage() {
   const heroImage =
     // "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=2400&q=80";
-    "/suvarnaprashan1.png";
+    "/Suvarnaprashan1.png";
 
   return (
     <PremiumTreatmentPage
@@ -22,7 +22,7 @@ export default function SuvarnaprashanPage() {
           "Suvarnaprashan is an Ayurvedic pediatric practice traditionally described as a wellness and immunization protocol for children. It typically uses processed gold (Swarna Bhasma) along with supportive herbs, honey, and ghee in carefully guided doses.\n\nYour Ayurvedic doctor will assess suitability, dosage, schedule, and precautions for your child.",
         image:
           // "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=2400&q=80",
-          "/suvarnaprashan1.png",
+          "/Suvarnaprashan1.png",
       }}
       causesTitle="Why Parents Choose Suvarnaprashan"
       causes={[
